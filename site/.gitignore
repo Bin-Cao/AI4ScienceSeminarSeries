@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.openai/*.tar.gz
+.openai/local/
+.openai/.state/
+*.log
+# Local reference documents are not website source or deployable assets.
+/学术委员会/
+AI4Science_报告邀请与信息填写模板.docx
+wechat/

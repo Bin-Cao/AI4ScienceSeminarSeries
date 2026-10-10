@@ -1,0 +1,11 @@
+# Keep local committee source documents out of Git at every directory level.
+学术委员会/
+
+# Local invitation template and WeChat material are not uploaded.
+AI4Science_报告邀请与信息填写模板.docx
+wechat/
+
+# Local metadata and the preserved history of the former nested Site checkout.
+.DS_Store
+.site-git-backup/
+site/.openai/

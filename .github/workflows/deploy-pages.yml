@@ -1,0 +1,59 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/dist/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      # One-time repository settings: Pages > Source = GitHub Actions;
+      # Custom domain = ai4s.hk.cn. Actions deployments use that domain setting.
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Check the static website
+        shell: bash
+        run: |
+          test -f site/dist/index.html
+          test -f site/dist/seminars/001/index.html
+          test "$(cat site/dist/CNAME)" = "ai4s.hk.cn"
+          node --check site/dist/i18n.js
+          node --check site/dist/content.js
+          node --check site/dist/episode.js
+          node --check site/dist/app.js
+
+      - name: Upload website files
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/dist
+
+      - name: Publish the website
+        id: deployment
+        uses: actions/deploy-pages@v4

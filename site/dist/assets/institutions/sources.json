@@ -1,0 +1,35 @@
+{
+  "hkust.svg": {
+    "institution": "香港科技大学",
+    "homepage": "https://hkust.edu.hk/",
+    "source": "https://hkust.edu.hk/sites/default/files/2024-03/HKUST_logo_1.svg"
+  },
+  "ntu.png": {
+    "institution": "南洋理工大学",
+    "homepage": "https://www.ntu.edu.sg/",
+    "source": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/NTU_Logo.png"
+  },
+  "ucl.svg": {
+    "institution": "UCL · University College London",
+    "homepage": "https://www.ucl.ac.uk/",
+    "source": "https://cdn.ucl.ac.uk/logos/ucl/ucl-logo--primary.svg"
+  },
+  "cuhk.svg": {
+    "institution": "香港中文大学",
+    "homepage": "https://www.cuhk.edu.hk/",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/41/CUHK_banner.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:CUHK_banner.svg"
+  },
+  "ustc.svg": {
+    "institution": "中国科学技术大学",
+    "homepage": "https://www.ustc.edu.cn/",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/3c/Logo_of_University_of_Science_and_Technology_of_China.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Logo_of_University_of_Science_and_Technology_of_China.svg"
+  },
+  "tsinghua.svg": {
+    "institution": "清华大学",
+    "homepage": "https://www.tsinghua.edu.cn/",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tsinghua_University_Logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tsinghua_University_Logo.svg"
+  }
+}
