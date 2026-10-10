@@ -1,6 +1,6 @@
 # AI4Science Seminar Series
 
-## English
+
 
 A forum for young researchers in AI for Science, initiated by Bin Cao. Real tech. Real experience. A focus on practical progress in research.
 
@@ -18,7 +18,7 @@ Session topics, speakers, dates, and joining details are posted on the website a
 
 ---
 
-## 中文
+
 
 由曹斌（Bin Cao）发起的年轻人的 AI for Science 论坛。真讲技术，聊透经验，重视研究工作的实际成效。
 
