@@ -107,7 +107,7 @@
   let invitation = "";
   const inviteText = t("invite.text", {
     founder: content.founder.name,
-    session: currentSeminar ? t("invite.session", { id: currentSeminar.id, title: currentSeminar.title, note: currentSeminar.topicNote, date: currentSeminar.date || t("date.pending") }) : t("invite.pending"),
+    format: t("invite.format"),
     wechat: content.wechat.name, url: publicUrl()
   });
   function showDialog(eyebrow, title, body, actions) {
