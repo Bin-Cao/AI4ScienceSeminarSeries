@@ -16,6 +16,8 @@
   if (seminar.keywords) set("[data-episode-keywords]", seminar.keywords.join(" · "));
   set("[data-episode-date]", seminar.date || t("date.pending"));
   set("[data-episode-format]", seminar.format || t("format.pending"));
+  set("[data-meeting-number]", seminar.meetingNumber || "");
+  document.querySelectorAll("[data-meeting-number-row]").forEach((row) => { row.hidden = !seminar.meetingNumber; });
   set("[data-speaker-name]", seminar.speaker || t("speaker.pending"));
   set("[data-speaker-affiliation]", seminar.affiliation || t("speaker.inviting"));
   set("[data-speaker-title]", seminar.speakerTitle || "");
@@ -24,6 +26,7 @@
   set("[data-host-name]", seminar.host?.name || t("host.pending"));
   set("[data-host-affiliation]", seminar.host?.affiliation || t("host.same"));
   set("[data-host-title]", seminar.host?.title || "");
+  set("[data-host-research]", seminar.host?.research?.join(" · ") || "");
   set("[data-host-bio]", seminar.host?.bio || t("host.bio.pending"));
   if (seminar.registrationNote) set("[data-registration-note]", seminar.registrationNote);
   document.title = `VOL. ${seminar.id} · ${seminar.title} | AI4Science`;

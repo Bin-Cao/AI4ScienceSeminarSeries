@@ -20,14 +20,15 @@ window.SEMINAR_CONTENT = {
       id: "001", category: "AI × COMPUTATIONAL MECHANICS", title: "智能计算力学",
       description: "从物理驱动、数据驱动到物理与数据双驱动，综述 AI4PDEs 的算法、理论及其在固体力学正反问题中的应用。",
       status: "即将举行", topicNote: "第 1 期 · 中文报告", featured: true,
-      // 时间已确认；腾讯会议链接由组织者提供后填入 meetingUrl。
+      // 报告15:00开始；已确认的会议室开放时段为2026年10月24日14:30–17:30（UTC+8）。
       date: "10月24日 15:00（北京时间）", format: "腾讯会议",
       // 人物资料由下方学术委员条目统一填充，避免中英文简介重复维护。
       speakerId: "yizheng-wang", hostId: "bin-cao",
-      meetingUrl: null,
+      meetingUrl: "https://meeting.tencent.com/dm/SzTHWZEJWrQU",
+      meetingNumber: "117-594-534",
       registrationUrl: null, completed: false,
       confirmationNote: "线上报告 · 北京时间 UTC+8",
-      registrationNote: "10月24日北京时间15:00开始，报告语言为中文，通过腾讯会议参加。",
+      registrationNote: "2026年10月24日，会议室开放时间为14:30–17:30，报告15:00开始（北京时间 UTC+8）。报告语言为中文。",
       detail: "近几年来，深度学习无所不在，赋能于各个领域。尤其是人工智能与传统科学的结合（AI for Science，AI4Science）引发广泛关注。在 AI4Science 领域，利用人工智能算法求解 PDEs（AI4PDEs）已成为计算力学研究的焦点。AI4PDEs 的核心是将数据与方程相融合，并且几乎可以求解任何偏微分方程问题。由于其融合数据的优势，相较于传统算法，其计算效率通常提升数万倍。因此，本报告全面综述 AI4PDEs 的研究，总结现有 AI4PDEs 算法、理论，并讨论其在固体力学中的应用，包括正问题和反问题，展望未来研究方向，尤其是计算力学大模型。\n\n现有 AI4PDEs 算法包括物理信息神经网络（physics-informed neural networks，PINNs）、深度能量法（deep energy methods，DEM）、算子学习（operator learning），以及物理信息神经算子（physics-informed neural operators，PINO）。AI4PDEs 在科学计算中有许多应用，本报告聚焦于固体力学：正问题包括线弹性、弹塑性、超弹性以及断裂力学；反问题包括材料参数、本构、缺陷的识别，以及拓扑优化。\n\nAI4PDEs 代表了一种全新的科学模拟方法，通过利用大量数据在特定问题上提供近似解，然后根据具体的物理方程进行微调，避免像传统算法那样从头开始计算。因此，AI4PDEs 是未来计算力学大模型的雏形，能够大大加速传统数值算法。我们相信，利用人工智能助力科学计算不仅是计算领域的未来重要方向，同时也是计算力学的未来，即智能计算力学。",
       outcome: "了解智能计算力学最新的研究进展，加深对弹性力学、超弹性、断裂和塑性问题的理解，便于将相关方法用于自己的研究领域。",
       keywords: ["计算力学", "AI4PDEs", "AI4Science", "固体力学"],
@@ -111,7 +112,7 @@ window.SEMINAR_CONTENT = {
       status: "Upcoming", topicNote: "Session 1 · In Chinese",
       date: "24 Oct, 15:00 Beijing (UTC+8)", format: "Tencent Meeting",
       confirmationNote: "Online seminar · Beijing time (UTC+8)",
-      registrationNote: "24 October at 15:00 Beijing time (UTC+8). The talk will be in Chinese, via Tencent Meeting.",
+      registrationNote: "24 October 2026. Meeting room open 14:30–17:30; talk starts at 15:00 (Beijing time, UTC+8). Talk in Chinese.",
       detail: "Deep learning has spread across many fields, with the combination of artificial intelligence and traditional science (AI for Science, AI4Science) attracting particular attention. Within AI4Science, using AI algorithms to solve partial differential equations (AI4PDEs) has become a focus of computational mechanics. AI4PDEs combines data with equations and can address almost any PDE problem. By incorporating data, its computational efficiency can typically improve by tens of thousands of times compared with traditional algorithms. This talk reviews AI4PDEs research, summarizes existing algorithms and theory, and discusses forward and inverse problems in solid mechanics, before looking ahead to future directions, particularly foundation models for computational mechanics.\n\nExisting approaches include physics-informed neural networks (PINNs), deep energy methods (DEM), operator learning, and physics-informed neural operators (PINO). Although AI4PDEs has many scientific computing applications, this talk focuses on solid mechanics. Forward problems include linear elasticity, elastoplasticity, hyperelasticity, and fracture mechanics. Inverse problems include identifying material parameters, constitutive relations, and defects, as well as topology optimization.\n\nAI4PDEs offers a new approach to scientific simulation: using large amounts of data to provide approximate solutions for specific problems, then fine-tuning them to the governing physical equations instead of computing from scratch. In this sense, AI4PDEs is a precursor to foundation models for computational mechanics and can substantially accelerate traditional numerical algorithms. AI-assisted scientific computing is an important future direction for both computing and computational mechanics: intelligent computational mechanics.",
       outcome: "Learn about recent advances in intelligent computational mechanics and deepen your understanding of elasticity, hyperelasticity, fracture, and plasticity, with a view to applying these methods in your own research.",
       keywords: ["Computational mechanics", "AI4PDEs", "AI4Science", "Solid mechanics"],
@@ -172,5 +173,5 @@ window.SEMINAR_CONTENT.seminars.forEach((seminar) => {
   const speaker = members.find((member) => member?.id === seminar.speakerId);
   const host = members.find((member) => member?.id === seminar.hostId);
   if (speaker) Object.assign(seminar, { speaker: speaker.name, affiliation: speaker.affiliation, shortAffiliation: speaker.shortAffiliation, speakerTitle: speaker.title, speakerResearch: speaker.research, avatar: speaker.avatar, speakerBio: speaker.bio });
-  if (host) seminar.host = { name: host.name, affiliation: host.affiliation, title: host.title, avatar: host.avatar, bio: host.bio };
+  if (host) seminar.host = { name: host.name, affiliation: host.affiliation, title: host.title, research: host.research, avatar: host.avatar, bio: host.bio };
 });

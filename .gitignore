@@ -8,6 +8,9 @@
 AI4Science_报告邀请与信息填写模板.docx
 wechat/
 
+# Local poster references, sources, and exports are not uploaded.
+poster/
+
 # Local metadata and the preserved history of the former nested Site checkout.
 .DS_Store
 .site-git-backup/
