@@ -31,5 +31,10 @@
     "homepage": "https://www.tsinghua.edu.cn/",
     "source": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tsinghua_University_Logo.svg",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Tsinghua_University_Logo.svg"
+  },
+  "unsw.png": {
+    "institution": "新南威尔士大学（UNSW Sydney）",
+    "homepage": "https://www.unsw.edu.au/",
+    "source": "https://www.unsw.edu.au/content/dam/images/graphics/logos/unsw/unsw_0.png"
   }
 }

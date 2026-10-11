@@ -6,5 +6,6 @@ node_modules/
 *.log
 # Local reference documents are not website source or deployable assets.
 /学术委员会/
+/报告内容word/
 AI4Science_报告邀请与信息填写模板.docx
 wechat/

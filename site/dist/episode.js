@@ -11,14 +11,21 @@
   set("[data-episode-note]", seminar.topicNote);
   set("[data-episode-description]", seminar.description);
   set("[data-episode-detail]", seminar.detail);
+  if (seminar.confirmationNote) set("[data-episode-confirmation]", seminar.confirmationNote);
+  if (seminar.outcome) set("[data-episode-outcome]", seminar.outcome);
+  if (seminar.keywords) set("[data-episode-keywords]", seminar.keywords.join(" · "));
   set("[data-episode-date]", seminar.date || t("date.pending"));
   set("[data-episode-format]", seminar.format || t("format.pending"));
   set("[data-speaker-name]", seminar.speaker || t("speaker.pending"));
   set("[data-speaker-affiliation]", seminar.affiliation || t("speaker.inviting"));
+  set("[data-speaker-title]", seminar.speakerTitle || "");
+  set("[data-speaker-research]", seminar.speakerResearch?.join(" · ") || "");
   set("[data-speaker-bio]", seminar.speakerBio || t("speaker.bio.pending"));
   set("[data-host-name]", seminar.host?.name || t("host.pending"));
   set("[data-host-affiliation]", seminar.host?.affiliation || t("host.same"));
+  set("[data-host-title]", seminar.host?.title || "");
   set("[data-host-bio]", seminar.host?.bio || t("host.bio.pending"));
+  if (seminar.registrationNote) set("[data-registration-note]", seminar.registrationNote);
   document.title = `VOL. ${seminar.id} · ${seminar.title} | AI4Science`;
   document.querySelector('meta[name="description"]').content = `${seminar.description} ${t("episode.meta.suffix")}`;
   document.querySelector('meta[property="og:title"]').content = document.title;
@@ -35,7 +42,7 @@
       img.src = url.href;
       img.alt = name || "";
       img.loading = "lazy";
-      document.querySelector(selector).replaceChildren(img);
+      document.querySelectorAll(selector).forEach((element) => element.replaceChildren(img.cloneNode(true)));
     } catch { /* Keep the intentional empty portrait when a URL is invalid. */ }
   }
   portrait("[data-speaker-avatar]", seminar.avatar, seminar.speaker);
@@ -46,6 +53,7 @@
     { title: t("topic.3.title"), text: t("topic.3.text") }
   ];
   const list = document.querySelector("#episode-topics");
+  list.replaceChildren();
   topics.forEach((topic, index) => {
     const article = document.createElement("article");
     article.className = "episode-topic";
@@ -63,6 +71,20 @@
     set("[data-attend-label]", t("episode.ended.action"));
     set("[data-registration-status]", t("episode.ended"));
     set("[data-registration-note]", t("episode.ended.note"));
+  } else if (seminar.meetingUrl) {
+    try {
+      const url = new URL(seminar.meetingUrl);
+      if (url.protocol !== "https:") throw new Error("Meeting links must use HTTPS");
+      document.querySelectorAll("[data-meeting-link]").forEach((link) => {
+        link.href = url.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.hidden = false;
+      });
+      document.querySelectorAll("[data-meeting-pending]").forEach((element) => { element.hidden = true; });
+      document.querySelectorAll("[data-meeting-url]").forEach((link) => { link.href = url.href; link.textContent = url.href; link.target = "_blank"; link.rel = "noopener noreferrer"; link.hidden = false; });
+      set("[data-registration-status]", t("meeting.ready"));
+    } catch { /* Keep the pending state until a valid meeting URL is provided. */ }
   } else if (seminar.registrationUrl || window.SEMINAR_CONTENT.registrationUrl) {
     set("[data-registration-status]", t("registration.ready"));
     set("[data-registration-note]", t("registration.ready.note"));

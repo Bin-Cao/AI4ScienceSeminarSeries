@@ -1,6 +1,9 @@
 # Keep local committee source documents out of Git at every directory level.
 学术委员会/
 
+# Local report drafts and all files inside them.
+报告内容word/
+
 # Local invitation template and WeChat material are not uploaded.
 AI4Science_报告邀请与信息填写模板.docx
 wechat/

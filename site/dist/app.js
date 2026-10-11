@@ -23,11 +23,11 @@
     return source ? `<img src="${escapeHTML(source)}" alt="${escapeHTML(name)}" loading="lazy" />` : icon("person", "person-icon");
   };
   const card = (seminar) => {
-    const href = escapeHTML(pageUrl(`./seminars/${encodeURIComponent(seminar.id)}/`));
+    const href = escapeHTML(pageUrl(`./seminars/${encodeURIComponent(seminar.id)}/index.html`));
     return `<article class="seminar-card${seminar.featured ? " featured" : ""}">
       <div class="seminar-number"><small>VOL.</small><strong>${escapeHTML(seminar.id)}</strong></div>
       <div class="seminar-main"><div class="seminar-category">${escapeHTML(seminar.category)}</div><h3><a href="${href}">${escapeHTML(seminar.title)}</a></h3><p>${escapeHTML(seminar.description)}</p><span class="seminar-chip">${escapeHTML(seminar.topicNote)} · ${escapeHTML(seminar.status)}</span></div>
-      <div class="seminar-speaker"><div class="speaker-avatar">${person(seminar.avatar, seminar.speaker)}</div><div><strong>${escapeHTML(seminar.speaker || t("speaker.soon"))}</strong><small>${escapeHTML(seminar.affiliation || t("speaker.inviting"))}</small></div></div>
+      <div class="seminar-speaker"><div class="speaker-avatar">${person(seminar.avatar, seminar.speaker)}</div><div><strong>${escapeHTML(seminar.speaker || t("speaker.soon"))}</strong><small>${escapeHTML(seminar.shortAffiliation || seminar.affiliation || t("speaker.inviting"))}</small></div></div>
       <div class="seminar-meta"><span>${icon("calendar")}${escapeHTML(seminar.date || t("date.short"))}</span><span>${icon("screen")}${escapeHTML(seminar.format || t("format.pending"))}</span></div>
       <a class="seminar-detail-link" href="${href}" aria-label="${escapeHTML(t("card.aria", { id: seminar.id, title: seminar.title }))}">${t("card.open")}</a>
     </article>`;
@@ -187,7 +187,7 @@
   // Sections arrive gently as they enter the viewport. Content stays visible
   // without JavaScript or when the visitor requests reduced motion.
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  if (!reduceMotion.matches && "IntersectionObserver" in window) {
+  if (!document.body.classList.contains("episode-detail-page") && !reduceMotion.matches && "IntersectionObserver" in window) {
     const revealItems = [...document.querySelectorAll(".section-heading, .seminar-card, .about-intro, .principle, .founder-card, .committee-member, .join-section, .faq-section, .acknowledgements-heading, .episode-section-label, .episode-topic, .episode-person, .discussion-steps article, .episode-participate")];
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

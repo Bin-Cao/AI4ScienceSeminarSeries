@@ -12,23 +12,30 @@ window.SEMINAR_CONTENT = {
     { id: "tsinghua", name: "清华大学", englishName: "Tsinghua University", logo: "./assets/institutions/tsinghua.svg" },
     { id: "ustc", name: "中国科学技术大学", englishName: "University of Science and Technology of China", logo: "./assets/institutions/ustc.svg" },
     { id: "ntu", name: "南洋理工大学", englishName: "Nanyang Technological University, Singapore", logo: "./assets/institutions/ntu.png" },
-    { id: "ucl", name: "UCL · 伦敦大学学院", englishName: "University College London", logo: "./assets/institutions/ucl.svg" }
+    { id: "ucl", name: "UCL · 伦敦大学学院", englishName: "University College London", logo: "./assets/institutions/ucl.svg" },
+    { id: "unsw", name: "新南威尔士大学", englishName: "UNSW Sydney", logo: "./assets/institutions/unsw.png" }
   ],
   seminars: [
     {
-      id: "001", category: "AI FOR SCIENCE", title: "从真实的科学问题出发",
-      description: "问题怎么拆、方法怎么选、结果怎么验。把一项研究真正做成的过程，展开讲。",
-      status: "筹备中", topicNote: "首期 · 拟议主题", featured: true,
-      speaker: null, affiliation: null, avatar: null, date: null, format: null,
-      speakerBio: null,
-      // 邀请人同时担任主持人，仅维护同一份人物信息。
-      host: { name: null, affiliation: null, avatar: null, bio: null },
+      id: "001", category: "AI × COMPUTATIONAL MECHANICS", title: "智能计算力学",
+      description: "从物理驱动、数据驱动到物理与数据双驱动，综述 AI4PDEs 的算法、理论及其在固体力学正反问题中的应用。",
+      status: "即将举行", topicNote: "第 1 期 · 中文报告", featured: true,
+      // 时间已确认；腾讯会议链接由组织者提供后填入 meetingUrl。
+      date: "10月24日 15:00（北京时间）", format: "腾讯会议",
+      // 人物资料由下方学术委员条目统一填充，避免中英文简介重复维护。
+      speakerId: "yizheng-wang", hostId: "bin-cao",
+      meetingUrl: null,
       registrationUrl: null, completed: false,
-      detail: "首期拟从一个真实的科学问题讲起，沿着问题定义、数据准备、方法选择与结果验证，拆开讨论研究中的关键决策。希望把有效的做法、走过的弯路和方法的适用边界讲清楚，让参与者带走能用于自己研究的思路。最终题目与报告内容将在讲者确认后公布。",
+      confirmationNote: "线上报告 · 北京时间 UTC+8",
+      registrationNote: "10月24日北京时间15:00开始，报告语言为中文，通过腾讯会议参加。",
+      detail: "近几年来，深度学习无所不在，赋能于各个领域。尤其是人工智能与传统科学的结合（AI for Science，AI4Science）引发广泛关注。在 AI4Science 领域，利用人工智能算法求解 PDEs（AI4PDEs）已成为计算力学研究的焦点。AI4PDEs 的核心是将数据与方程相融合，并且几乎可以求解任何偏微分方程问题。由于其融合数据的优势，相较于传统算法，其计算效率通常提升数万倍。因此，本报告全面综述 AI4PDEs 的研究，总结现有 AI4PDEs 算法、理论，并讨论其在固体力学中的应用，包括正问题和反问题，展望未来研究方向，尤其是计算力学大模型。\n\n现有 AI4PDEs 算法包括物理信息神经网络（physics-informed neural networks，PINNs）、深度能量法（deep energy methods，DEM）、算子学习（operator learning），以及物理信息神经算子（physics-informed neural operators，PINO）。AI4PDEs 在科学计算中有许多应用，本报告聚焦于固体力学：正问题包括线弹性、弹塑性、超弹性以及断裂力学；反问题包括材料参数、本构、缺陷的识别，以及拓扑优化。\n\nAI4PDEs 代表了一种全新的科学模拟方法，通过利用大量数据在特定问题上提供近似解，然后根据具体的物理方程进行微调，避免像传统算法那样从头开始计算。因此，AI4PDEs 是未来计算力学大模型的雏形，能够大大加速传统数值算法。我们相信，利用人工智能助力科学计算不仅是计算领域的未来重要方向，同时也是计算力学的未来，即智能计算力学。",
+      outcome: "了解智能计算力学最新的研究进展，加深对弹性力学、超弹性、断裂和塑性问题的理解，便于将相关方法用于自己的研究领域。",
+      keywords: ["计算力学", "AI4PDEs", "AI4Science", "固体力学"],
+      resourceUrl: "https://yizheng-wang.github.io/",
       takeaways: [
-        { title: "问题，怎么拆？", text: "拟讨论如何把科学需求转成可验证的研究问题，确定任务、数据与评价标准。" },
-        { title: "技术，怎么选？", text: "拟讨论模型、基线与实验方案如何取舍，哪些细节影响结果，哪些尝试没有奏效。" },
-        { title: "结果，怎么用？", text: "拟讨论如何验证方法的实际效果、识别适用边界，并判断下一步值得做什么。" }
+        { title: "物理驱动", text: "智能计算力学中的物理驱动方法。" },
+        { title: "数据驱动", text: "智能计算力学中的数据驱动方法。" },
+        { title: "物理与数据双驱动", text: "智能计算力学中的物理与数据融合。" }
       ]
     },
     {
@@ -62,6 +69,25 @@ window.SEMINAR_CONTENT = {
       homepage: "https://www.caobin.asia/"
     },
     {
+      id: "jie-xiong", name: "熊杰", englishName: "Jie Xiong",
+      affiliation: "上海大学材料基因组工程研究院", shortAffiliation: "上海大学",
+      title: "助理研究员；材料信息与数据科学中心副主任", role: "学术委员",
+      avatar: "./assets/committee/jie-xiong.png",
+      research: ["AI4alloys", "Physics-guided AI"],
+      bio: "熊杰，上海大学材料基因组工程研究院助理研究员、材料信息与数据科学中心副主任，主要从事人工智能驱动的金属结构材料设计，以及知识引导的材料通用算法研究。曾入选上海市浦江人才，并获材料基因工程青年科学家奖。作为第一或通信作者，在 npj Computational Materials、Advanced Science、Acta Materialia 等期刊发表论文30余篇。主持工信部新材料重大专项子课题、国家自然科学基金青年基金、上海市科委、上海市经信委等多项 AI4S 相关课题，兼任中国材料研究学会材料基因组分会秘书，以及 Journal of Materials Informatics 和 MGE Advances 青年编委。",
+      homepage: "http://www.ai4s-mgi.cn/xiongjie"
+    },
+    {
+      id: "tong-xie", name: "谢童", englishName: "Tong Xie",
+      affiliation: "新南威尔士大学（UNSW Sydney）；律动造物", shortAffiliation: "新南威尔士大学 · 律动造物",
+      title: "讲师；UNSW AI4Science（MASA Lab）研究组创始人；律动造物创始人兼首席执行官", role: "学术委员",
+      avatar: "./assets/committee/tong-xie.jpg",
+      research: ["AI for Science", "RSI", "自主化实验室", "化学信息学"],
+      bio: "谢童，新南威尔士大学（UNSW）讲师，MASA Lab 研究组创始人，律动造物创始人兼 CEO。博士毕业于新南威尔士大学，早期从事钙钛矿纳米材料研究，现专注科学大模型与 AI 驱动的材料与化学研发，主导开发 DARWIN 科学大模型、CheMiST 化学推理大模型等工作，成果发表于 NeurIPS、ICML、ICLR 等顶级会议以及 Nature、Science 系列期刊。曾获美国能源部阿贡国家实验室主任奖、澳大利亚 NCI HPC-AI 十佳人才等国际青年科学家奖项。",
+      homepage: "https://scholar.google.com/citations?user=IWEN6kcAAAAJ",
+      orcid: "0000-0002-1659-4865"
+    },
+    {
       id: "yizheng-wang", name: "王一铮", englishName: "Yizheng Wang",
       affiliation: "清华大学航天航空学院工程力学系", shortAffiliation: "清华大学",
       title: "博士生", role: "学术委员",
@@ -69,9 +95,7 @@ window.SEMINAR_CONTENT = {
       research: ["AI for PDEs", "计算固体力学"],
       bio: "王一铮，清华大学工程力学系博士生、清华大学未来学者，研究人工智能与物理计算的结合（Physical AI），重点关注 AI for PDEs 与计算固体力学。曾在微软研究院 AI for Science 从事研究助理工作，并赴德国魏玛包豪斯大学访问研究。研究涉及物理信息神经网络、算子学习与深度能量方法，相关成果发表于 Applied Mechanics Reviews、Nature Communications、JMPS、CMAME 等期刊，参与编写科学机器学习英文专著。",
       homepage: "https://yizheng-wang.github.io/"
-    },
-    null,
-    null
+    }
   ]
 };
 
@@ -82,14 +106,19 @@ window.SEMINAR_CONTENT = {
   const content = window.SEMINAR_CONTENT;
   const seminars = {
     "001": {
-      title: "Starting with a real scientific question",
-      description: "How do you frame the problem, choose the method, and validate the result? An inside look at making research work.",
-      status: "In preparation", topicNote: "First session · Proposed topic",
-      detail: "The proposed first session starts with a real scientific question and follows the decisions behind the research: defining the problem, preparing data, choosing methods, and validating results. We hope to discuss what worked, the detours along the way, and the limits of the approach, so participants leave with ideas they can use in their own research. The final title and abstract will be announced once the speaker is confirmed.",
+      title: "AI for PDEs in Computational Mechanics",
+      description: "Physics-driven, data-driven, and hybrid approaches: a review of AI4PDEs algorithms, theory, and applications to forward and inverse problems in solid mechanics.",
+      status: "Upcoming", topicNote: "Session 1 · In Chinese",
+      date: "24 Oct, 15:00 Beijing (UTC+8)", format: "Tencent Meeting",
+      confirmationNote: "Online seminar · Beijing time (UTC+8)",
+      registrationNote: "24 October at 15:00 Beijing time (UTC+8). The talk will be in Chinese, via Tencent Meeting.",
+      detail: "Deep learning has spread across many fields, with the combination of artificial intelligence and traditional science (AI for Science, AI4Science) attracting particular attention. Within AI4Science, using AI algorithms to solve partial differential equations (AI4PDEs) has become a focus of computational mechanics. AI4PDEs combines data with equations and can address almost any PDE problem. By incorporating data, its computational efficiency can typically improve by tens of thousands of times compared with traditional algorithms. This talk reviews AI4PDEs research, summarizes existing algorithms and theory, and discusses forward and inverse problems in solid mechanics, before looking ahead to future directions, particularly foundation models for computational mechanics.\n\nExisting approaches include physics-informed neural networks (PINNs), deep energy methods (DEM), operator learning, and physics-informed neural operators (PINO). Although AI4PDEs has many scientific computing applications, this talk focuses on solid mechanics. Forward problems include linear elasticity, elastoplasticity, hyperelasticity, and fracture mechanics. Inverse problems include identifying material parameters, constitutive relations, and defects, as well as topology optimization.\n\nAI4PDEs offers a new approach to scientific simulation: using large amounts of data to provide approximate solutions for specific problems, then fine-tuning them to the governing physical equations instead of computing from scratch. In this sense, AI4PDEs is a precursor to foundation models for computational mechanics and can substantially accelerate traditional numerical algorithms. AI-assisted scientific computing is an important future direction for both computing and computational mechanics: intelligent computational mechanics.",
+      outcome: "Learn about recent advances in intelligent computational mechanics and deepen your understanding of elasticity, hyperelasticity, fracture, and plasticity, with a view to applying these methods in your own research.",
+      keywords: ["Computational mechanics", "AI4PDEs", "AI4Science", "Solid mechanics"],
       takeaways: [
-        { title: "How do you frame the problem?", text: "How a scientific need becomes a testable research question, with a clear task, data, and evaluation criteria." },
-        { title: "How do you choose the method?", text: "Decisions about models, baselines, and experiments: the details that mattered and the attempts that did not work." },
-        { title: "What can you do with the result?", text: "How to validate practical performance, identify the limits, and decide what is worth doing next." }
+        { title: "Physics-driven methods", text: "Physics-driven approaches to intelligent computational mechanics." },
+        { title: "Data-driven methods", text: "Data-driven approaches to intelligent computational mechanics." },
+        { title: "Combining physics and data", text: "Hybrid approaches that bring physics and data together." }
       ]
     },
     "002": {
@@ -117,6 +146,18 @@ window.SEMINAR_CONTENT = {
       title: "PhD Student", role: "Academic Committee",
       research: ["AI for PDEs", "Computational solid mechanics"],
       bio: "Yizheng Wang is a PhD student in Engineering Mechanics and a Future Scholar at Tsinghua University. His research connects artificial intelligence with physics-based computation (Physical AI), focusing on AI for PDEs and computational solid mechanics. He has worked as a Research Assistant with Microsoft Research AI for Science and visited Bauhaus-Universität Weimar in Germany. His work covers physics-informed neural networks, operator learning, and deep energy methods, with publications in Applied Mechanics Reviews, Nature Communications, JMPS, and CMAME. He has also contributed to an English-language monograph on scientific machine learning."
+    },
+    "jie-xiong": {
+      name: "Jie Xiong", affiliation: "Materials Genome Institute, Shanghai University", shortAffiliation: "Shanghai University",
+      title: "Assistant Researcher; Deputy Director, Center for Materials Informatics and Data Science", role: "Academic Committee",
+      research: ["AI4alloys", "Physics-guided AI"],
+      bio: "Jie Xiong is an Assistant Researcher at the Materials Genome Institute of Shanghai University and Deputy Director of its Center for Materials Informatics and Data Science. His research focuses on AI-driven design of structural metallic materials and knowledge-guided general-purpose algorithms for materials. He has been selected for the Shanghai Pujiang Talent Program and received a Materials Genome Engineering Young Scientist Award. He has published more than 30 papers as first or corresponding author in journals including npj Computational Materials, Advanced Science, and Acta Materialia. He leads AI4S projects supported by national and Shanghai funding programmes, serves as secretary of the Materials Genome Engineering branch of the Chinese Materials Research Society, and is a young editorial board member of Journal of Materials Informatics and MGE Advances."
+    },
+    "tong-xie": {
+      name: "Tong Xie", affiliation: "UNSW Sydney; 律动造物", shortAffiliation: "UNSW Sydney · 律动造物",
+      title: "Lecturer; Founder of UNSW AI4Science (MASA Lab); Founder and CEO of 律动造物", role: "Academic Committee",
+      research: ["AI for Science", "RSI", "Autonomous laboratories", "Cheminformatics"],
+      bio: "Tong Xie is a Lecturer at UNSW Sydney, founder of MASA Lab, and founder and CEO of 律动造物. He received his PhD from UNSW, initially working on perovskite nanomaterials. His current research focuses on scientific foundation models and AI-driven materials and chemistry research. He has led the development of DARWIN scientific foundation models and CheMiST chemical reasoning models, with work published at NeurIPS, ICML, and ICLR and in Nature and Science family journals. His awards include a Director’s Award from the U.S. Department of Energy’s Argonne National Laboratory and recognition among Australia’s NCI HPC-AI Top 10 talents."
     }
   };
   content.founder.name = "Bin Cao";
@@ -124,3 +165,12 @@ window.SEMINAR_CONTENT = {
   content.committee = content.committee.map((item) => item && ({ ...item, ...committee[item.id] }));
   content.acknowledgements = content.acknowledgements.map((item) => ({ ...item, name: item.englishName }));
 })();
+
+// Reuse the localized committee profiles for speakers and hosts.
+window.SEMINAR_CONTENT.seminars.forEach((seminar) => {
+  const members = window.SEMINAR_CONTENT.committee;
+  const speaker = members.find((member) => member?.id === seminar.speakerId);
+  const host = members.find((member) => member?.id === seminar.hostId);
+  if (speaker) Object.assign(seminar, { speaker: speaker.name, affiliation: speaker.affiliation, shortAffiliation: speaker.shortAffiliation, speakerTitle: speaker.title, speakerResearch: speaker.research, avatar: speaker.avatar, speakerBio: speaker.bio });
+  if (host) seminar.host = { name: host.name, affiliation: host.affiliation, title: host.title, avatar: host.avatar, bio: host.bio };
+});
