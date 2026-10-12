@@ -253,11 +253,33 @@
       "mode": "WebP quality 94, original dimensions",
       "sourceSha256": "dc0b77d7845dab2c815091c9267b91da1fee2526d1b5311fc3b0bc2650a9e1e7",
       "optimizedSha256": "e5a07f251525149cb235ca77fbce764c39e1184bd7edb745440e5431887a706a"
+    },
+    {
+      "source": "assets/committee/yang-liu-lakeside.png",
+      "target": "assets/optimized/committee/yang-liu-lakeside.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 1840536,
+      "optimizedBytes": 122328,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "5cd25e3ad4506fc77ad5bd7095bca486195dc1afee953cd928356bce201adee1",
+      "optimizedSha256": "db7da7be8a38580696b65aff9d4ac5b017653106f3b6a844fb809100c4391ec8"
+    },
+    {
+      "source": "assets/committee/ruiming-zhu-seminar-room.png",
+      "target": "assets/optimized/committee/ruiming-zhu-seminar-room.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 1557306,
+      "optimizedBytes": 90070,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "4e15e34020c38ac9b3fdeec4a06acb6fcac773556d552ed636c7c3aea40233f2",
+      "optimizedSha256": "9b80eaf611d07cf81e8729330362736677f5e0e9dbe377050d61c09ba4db85df"
     }
   ],
   "activePageAssets": {
-    "count": 18,
-    "beforeBytes": 11250775,
-    "afterBytes": 2379198
+    "count": 20,
+    "beforeBytes": 14648617,
+    "afterBytes": 2591596
   }
 }

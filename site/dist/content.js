@@ -162,6 +162,38 @@ window.SEMINAR_CONTENT = {
       "homepage": null
     },
     {
+      "id": "yang-liu",
+      "name": "刘阳",
+      "englishName": "Yang Liu",
+      "affiliation": "香港中文大学系统工程与工程管理学系",
+      "shortAffiliation": "香港中文大学",
+      "title": "博士后研究员",
+      "role": "学术委员",
+      "avatar": "./assets/optimized/committee/yang-liu-lakeside.webp",
+      "research": [
+        "AI 气象与气候"
+      ],
+      "bio": "刘阳，香港中文大学博士后研究员，与 Hong Cheng 教授合作。2025 年获香港科技大学个性化跨学科项目（数据科学与分析）博士学位。主要研究人工智能在天气与气候领域的应用，尤其关注利用几何深度学习与基础模型理解地球系统动力学。\n\n研究涵盖面向物理动力学的等变神经网络、全球次季节至季节尺度天气预报，以及风电功率预测、极端天气预测等应用。相关成果发表于 ICLR、ICML、NeurIPS、CVPR、WWW、KDD 等机器学习与人工智能会议，以及 IEEE Transactions on Knowledge and Data Engineering、National Science Review 等期刊。",
+      "homepage": "https://yliukj.github.io/"
+    },
+    {
+      "id": "ruiming-zhu",
+      "name": "朱睿明",
+      "englishName": "Ruiming Zhu",
+      "affiliation": "南洋理工大学材料科学与工程学院",
+      "shortAffiliation": "南洋理工大学",
+      "title": "博士后研究员",
+      "role": "学术委员",
+      "avatar": "./assets/optimized/committee/ruiming-zhu-seminar-room.webp",
+      "research": [
+        "AI4Science",
+        "生成式 AI",
+        "晶体结构设计"
+      ],
+      "bio": "朱睿明，南洋理工大学（NTU）材料科学与工程学院博士后研究员，博士毕业于南洋理工大学，曾于美国普渡大学和斯坦福大学获得材料科学与工程学士及硕士学位。主要从事人工智能驱动的晶体材料设计与发现，研究方向包括晶体结构生成、材料可合成性预测、对称性约束的生成式人工智能，以及无序晶体材料设计。\n\n近年来，围绕晶体材料的智能设计与高通量筛选，开发了 WyCryst、Dis-GEN 等晶体结构生成框架，并将机器学习与第一性原理计算相结合，开展新型功能材料的预测、筛选及实验验证。相关研究成果发表于 Matter、ICML 及 Nature、Science 系列期刊，涵盖热电材料、金属合金及无机晶体等体系，致力于构建从材料生成、稳定性评估到实验验证的人工智能驱动材料发现的闭环设计。",
+      "homepage": null
+    },
+    {
       "id": "yizheng-wang",
       "name": "王一铮",
       "englishName": "Yizheng Wang",
@@ -221,6 +253,30 @@ window.SEMINAR_CONTENT = {
       research: ["Scientific agents", "AI for Materials"],
       shortBio: "Initiator of Unpacked Seminar, with research focused on agents and machine learning for materials science. He leads the development of the self-learning scientific agent Ganjiang.",
       bio: "Bin Cao is a Research Scientist at Huawei Noah’s Ark Lab in London, collaborating with Professor Jun Wang at University College London on agents and machine learning for materials science. His research spans scientific agents, crystal representation learning, and Bayesian optimization, combining physical evidence, scientific tools, and research experience to advance materials analysis and discovery.\n\nHe has published more than 20 first-author research papers in journals including Natl. Sci. Rev., Sci. Bull., and npj Comput. Mater., and at machine learning conferences including ICLR and NeurIPS. Among his contributions, WPEM has been hailed as another landmark theoretical breakthrough in powder diffraction structure refinement following the Rietveld method introduced in 1969.\n\nHe leads the development of Ganjiang, a self-learning scientific agent exploring intelligent methods for diffraction analysis, phase identification, and structure refinement."
+    },
+    "yang-liu": {
+      "name": "Yang Liu",
+      "affiliation": "Department of Systems Engineering and Engineering Management, The Chinese University of Hong Kong",
+      "shortAffiliation": "The Chinese University of Hong Kong",
+      "title": "Postdoctoral Fellow",
+      "role": "Academic Committee",
+      "research": [
+        "AI for Weather and Climate"
+      ],
+      "bio": "Yang Liu is a Postdoctoral Fellow at The Chinese University of Hong Kong, working with Professor Hong Cheng. He received his Ph.D. in the Individualized Interdisciplinary Program (Data Science and Analytics) from The Hong Kong University of Science and Technology in 2025. His research interests center on AI for weather and climate, particularly geometric deep learning and foundation models for understanding Earth-system dynamics.\n\nHis work spans equivariant neural networks for physical dynamics, global subseasonal-to-seasonal weather forecasting, and downstream weather applications, including wind power prediction and extreme weather prediction. He has published at major machine learning and AI conferences, including ICLR, ICML, NeurIPS, CVPR, WWW, and KDD, as well as in journals such as IEEE Transactions on Knowledge and Data Engineering and National Science Review."
+    },
+    "ruiming-zhu": {
+      "name": "Ruiming Zhu",
+      "affiliation": "School of Materials Science and Engineering, Nanyang Technological University",
+      "shortAffiliation": "Nanyang Technological University",
+      "title": "Postdoctoral Research Fellow",
+      "role": "Academic Committee",
+      "research": [
+        "AI4Science",
+        "Generative AI",
+        "Crystal structure design"
+      ],
+      "bio": "Ruiming Zhu is a Postdoctoral Research Fellow at the School of Materials Science and Engineering, Nanyang Technological University (NTU), where he received his Ph.D. He previously earned a bachelor’s degree in Materials Science and Engineering from Purdue University and a master’s degree in the same field from Stanford University. His research focuses on AI-driven crystal materials design and discovery, including crystal structure generation, materials synthesizability prediction, symmetry-constrained generative AI, and the design of disordered crystalline materials.\n\nHe has developed crystal structure generation frameworks including WyCryst and Dis-GEN for intelligent materials design and high-throughput screening. By combining machine learning with first-principles calculations, he works on predicting, screening, and experimentally validating new functional materials. His research has appeared in Matter, at ICML, and in Nature and Science family journals, spanning thermoelectric materials, metal alloys, and inorganic crystals. He aims to build a closed-loop approach to AI-driven materials discovery that connects materials generation, stability assessment, and experimental validation."
     },
     "yizheng-wang": {
       name: "Yizheng Wang", affiliation: "Department of Engineering Mechanics, School of Aerospace Engineering, Tsinghua University", shortAffiliation: "Tsinghua University",
