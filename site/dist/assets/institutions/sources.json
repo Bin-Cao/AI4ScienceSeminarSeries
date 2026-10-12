@@ -36,5 +36,12 @@
     "institution": "新南威尔士大学（UNSW Sydney）",
     "homepage": "https://www.unsw.edu.au/",
     "source": "https://www.unsw.edu.au/content/dam/images/graphics/logos/unsw/unsw_0.png"
+  },
+  "sydney.svg": {
+    "institution": "悉尼大学（The University of Sydney）",
+    "homepage": "https://www.sydney.edu.au/",
+    "source": "https://wptheme.sydney.edu.au/assets/img/UoS_logo.svg",
+    "sourcePage": "https://design.sydney.edu.au/design/",
+    "notes": "Normalized viewBox attribute casing for correct SVG scaling; paths and colors unchanged."
   }
 }

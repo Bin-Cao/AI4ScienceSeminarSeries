@@ -13,7 +13,8 @@ window.SEMINAR_CONTENT = {
     { id: "ustc", name: "中国科学技术大学", englishName: "University of Science and Technology of China", logo: "./assets/institutions/ustc.svg" },
     { id: "ntu", name: "南洋理工大学", englishName: "Nanyang Technological University, Singapore", logo: "./assets/institutions/ntu.png" },
     { id: "ucl", name: "UCL · 伦敦大学学院", englishName: "University College London", logo: "./assets/institutions/ucl.svg" },
-    { id: "unsw", name: "新南威尔士大学", englishName: "UNSW Sydney", logo: "./assets/institutions/unsw.png" }
+    { id: "unsw", name: "新南威尔士大学", englishName: "UNSW Sydney", logo: "./assets/institutions/unsw.png" },
+    { id: "sydney", name: "悉尼大学", englishName: "The University of Sydney", logo: "./assets/institutions/sydney.svg" }
   ],
   seminars: [
     {
@@ -66,7 +67,8 @@ window.SEMINAR_CONTENT = {
       title: "研究科学家", role: "发起人 / 学术委员",
       avatar: "./assets/committee/bin-cao.jpg",
       research: ["科学智能体", "AI for Materials"],
-      bio: "曹斌，华为诺亚方舟实验室（伦敦）研究科学家，与伦敦大学学院 Jun Wang 教授合作，研究面向材料科学的智能体与机器学习方法。主要方向包括科学智能体、晶体表征学习和贝叶斯优化，关注如何结合物理证据、科学工具与研究经验，推动材料分析与发现。主导开发自学习科学智能体 Ganjiang（干将），探索衍射分析、物相识别与结构精修中的智能方法。",
+      shortBio: "AI4Science Seminar Series 发起人，主要从事面向材料科学的智能体与机器学习研究，主导开发自学习科学智能体 Ganjiang（干将）。",
+      bio: "曹斌，华为诺亚方舟实验室（伦敦）研究科学家，与伦敦大学学院 Jun Wang 教授合作，研究面向材料科学的智能体与机器学习方法。主要方向包括科学智能体、晶体表征学习和贝叶斯优化，关注如何结合物理证据、科学工具与研究经验，推动材料分析与发现。\n\n以第一作者在 Natl. Sci. Rev.、Sci. Bull.、npj Comput. Mater. 等期刊及 ICLR、NeurIPS 等机器学习会议发表研究论文二十余篇。其中，WPEM 被誉为继 1969 年 Rietveld 方法之后，粉末衍射结构精修领域又一里程碑式的理论突破。\n\n主导开发自学习科学智能体 Ganjiang（干将），探索衍射分析、物相识别与结构精修中的智能方法。",
       homepage: "https://www.caobin.asia/"
     },
     {
@@ -140,7 +142,8 @@ window.SEMINAR_CONTENT = {
       name: "Bin Cao", affiliation: "Huawei Noah’s Ark Lab, London", shortAffiliation: "Huawei Noah’s Ark Lab",
       title: "Research Scientist", role: "Initiator / Academic Committee",
       research: ["Scientific agents", "AI for Materials"],
-      bio: "Bin Cao is a Research Scientist at Huawei Noah’s Ark Lab in London, collaborating with Professor Jun Wang at University College London on agents and machine learning for materials science. His research spans scientific agents, crystal representation learning, and Bayesian optimization, combining physical evidence, scientific tools, and research experience to advance materials analysis and discovery. He leads the development of Ganjiang, a self-learning scientific agent exploring intelligent methods for diffraction analysis, phase identification, and structure refinement."
+      shortBio: "Initiator of the AI4Science Seminar Series, with research focused on agents and machine learning for materials science. He leads the development of the self-learning scientific agent Ganjiang.",
+      bio: "Bin Cao is a Research Scientist at Huawei Noah’s Ark Lab in London, collaborating with Professor Jun Wang at University College London on agents and machine learning for materials science. His research spans scientific agents, crystal representation learning, and Bayesian optimization, combining physical evidence, scientific tools, and research experience to advance materials analysis and discovery.\n\nHe has published more than 20 first-author research papers in journals including Natl. Sci. Rev., Sci. Bull., and npj Comput. Mater., and at machine learning conferences including ICLR and NeurIPS. Among his contributions, WPEM has been hailed as another landmark theoretical breakthrough in powder diffraction structure refinement following the Rietveld method introduced in 1969.\n\nHe leads the development of Ganjiang, a self-learning scientific agent exploring intelligent methods for diffraction analysis, phase identification, and structure refinement."
     },
     "yizheng-wang": {
       name: "Yizheng Wang", affiliation: "Department of Engineering Mechanics, School of Aerospace Engineering, Tsinghua University", shortAffiliation: "Tsinghua University",
@@ -173,5 +176,5 @@ window.SEMINAR_CONTENT.seminars.forEach((seminar) => {
   const speaker = members.find((member) => member?.id === seminar.speakerId);
   const host = members.find((member) => member?.id === seminar.hostId);
   if (speaker) Object.assign(seminar, { speaker: speaker.name, affiliation: speaker.affiliation, shortAffiliation: speaker.shortAffiliation, speakerTitle: speaker.title, speakerResearch: speaker.research, avatar: speaker.avatar, speakerBio: speaker.bio });
-  if (host) seminar.host = { name: host.name, affiliation: host.affiliation, title: host.title, research: host.research, avatar: host.avatar, bio: host.bio };
+  if (host) seminar.host = { name: host.name, affiliation: host.affiliation, title: host.title, research: host.research, avatar: host.avatar, bio: host.shortBio || host.bio };
 });

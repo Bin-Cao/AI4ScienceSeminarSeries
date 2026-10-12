@@ -19,3 +19,6 @@
 - 使用细分隔线和现有绿色配色，保持简洁。两个人物均展示身份、单位和已有的研究方向，复用内容数据。
 - 人物分组参考：https://www.radcliffe.harvard.edu/event/2026-next-in-alzheimers-research ；人物照片、姓名、机构的信息顺序参考：https://www.simonsfoundation.org/event/a-look-behind-the-lens/ 。具体尺寸与响应式版式为本站设计。
 - 浏览器标签页 favicon 保持抽象、清晰：深绿色圆角底、一个米白开口圆环和一个浅绿色圆点，避免多个细线轨道。资源为 `dist/assets/favicon.svg`；更换时更新所有页面引用的版本号，以刷新缓存。
+
+- 邀请人／主持人区域仅展示简短介绍，使用人物资料中的 `shortBio`；论文数量、WPEM 等完整成果保留在个人详情 `bio` 中，维护中英文两个版本。
+- 报告列表的三位期号与右侧内容保持清晰间距；编号列按内容宽度扩展，桌面／手机均预留独立宽度，避免固定窄列导致编号重叠正文。
