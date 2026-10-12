@@ -40,10 +40,12 @@
   if (document.querySelector("#committee-grid")) {
     document.querySelector("#committee-grid").innerHTML = content.committee.filter(Boolean).map((member) => `<article class="committee-member confirmed-member" data-member-id="${escapeHTML(member.id)}">
       <div class="committee-avatar">${person(member.avatar, member.name)}</div>
+      <div class="member-details">
       <h4>${escapeHTML(member.name)}${member.name !== member.englishName ? `<span class="member-english">${escapeHTML(member.englishName)}</span>` : ""}</h4>
       <p class="member-affiliation">${escapeHTML(member.shortAffiliation || member.affiliation)}</p>
       <p class="member-research">${escapeHTML(member.research.join(" · "))}</p>
       <div class="member-actions"><button class="profile-button" data-member="${escapeHTML(member.id)}" aria-haspopup="dialog" aria-label="${escapeHTML(t("profile.aria", { name: member.name }))}">${t("profile.view")}</button></div>
+      </div>
     </article>`).join("");
     document.querySelector("#committee-note").textContent = t("people.count", { count: content.committee.filter(Boolean).length });
   }

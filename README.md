@@ -1,8 +1,8 @@
-# AI4Science Seminar Series
+# 研透论坛 · Unpacked Seminar
 
 
 
-A forum for young researchers in AI for Science, initiated by Bin Cao. Real tech. Real experience. A focus on practical progress in research.
+Unpacked Seminar (研透论坛) is a forum for young researchers in AI for Science, initiated by Bin Cao. Real tech. Real experience. A focus on practical progress in research.
 
 Each session features an active researcher sharing the work behind a real scientific problem: choosing methods, working through technical details, designing experiments, and validating results. We discuss lessons learned and detours along the way. Bring your research questions and leave with ideas you can try in your own work.
 
@@ -20,7 +20,7 @@ Session topics, speakers, dates, and joining details are posted on the website a
 
 
 
-由曹斌（Bin Cao）发起的年轻人的 AI for Science 论坛。真讲技术，聊透经验，重视研究工作的实际成效。
+研透论坛（Unpacked Seminar）是由曹斌（Bin Cao）发起的年轻人的 AI for Science 论坛。真讲技术，聊透经验，重视研究工作的实际成效。
 
 每期邀请一位一线研究者，围绕真实的科学问题，分享方法选择、技术细节、实验验证，以及研究中积累的经验和走过的弯路。我们希望参与者带着具体问题来，带着可以在自己工作中尝试的思路走。
 

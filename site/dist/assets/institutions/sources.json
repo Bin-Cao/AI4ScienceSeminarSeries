@@ -43,5 +43,13 @@
     "source": "https://wptheme.sydney.edu.au/assets/img/UoS_logo.svg",
     "sourcePage": "https://design.sydney.edu.au/design/",
     "notes": "Normalized viewBox attribute casing for correct SVG scaling; paths and colors unchanged."
+  },
+  "hkust-classic.png": {
+    "institution": "香港科技大学",
+    "homepage": "https://hkust.edu.hk/",
+    "source": "https://hoodiedesign.hkust.edu.hk/upload/HKUST_Brand_Guideline_Downloadable_Resources.pdf",
+    "sourcePage": "https://brand.hkust.edu.hk/",
+    "variant": "UST_L4 — standard bilingual combination, blue and gold",
+    "notes": "Original transparent 391 × 122 PNG extracted intact from page 1, image Image44; emblem, typography and colors unchanged. Displayed at 196 px desktop / 176 px mobile."
   }
 }

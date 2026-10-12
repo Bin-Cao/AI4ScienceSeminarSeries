@@ -29,7 +29,7 @@
   set("[data-host-research]", seminar.host?.research?.join(" · ") || "");
   set("[data-host-bio]", seminar.host?.bio || t("host.bio.pending"));
   if (seminar.registrationNote) set("[data-registration-note]", seminar.registrationNote);
-  document.title = `VOL. ${seminar.id} · ${seminar.title} | AI4Science`;
+  document.title = `VOL. ${seminar.id} · ${seminar.title} | ${t("brand.name")}`;
   document.querySelector('meta[name="description"]').content = `${seminar.description} ${t("episode.meta.suffix")}`;
   document.querySelector('meta[property="og:title"]').content = document.title;
   document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content;

@@ -1,0 +1,35 @@
+{
+  "tool": "Built-in image_gen",
+  "prompt": "Preserve the exact identity, facial features, age, hairstyle, expression, skin texture and original black clothing. Use a natural opaque pure-white background with soft diffuse lighting. Center the upper-chest portrait in a 2:3 frame, full hair visible and consistent comfortable headroom. No beautification, facial reshaping, added text or graphics.",
+  "portraits": {
+    "mengwei-he-white.png": {
+      "name": "何孟伟",
+      "source": "../../../学术委员会/学术委员(10).docx / word/media/image1.png"
+    },
+    "pengkun-wang-white.png": {
+      "name": "王鹏焜",
+      "source": "../../../学术委员会/学术委员(11).docx / word/media/image1.jpeg"
+    },
+    "pengkun-wang-scholar.png": {
+      "name": "王鹏焜",
+      "source": "pengkun-wang-white.png",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: identity-preserve. Asset type: realistic academic committee headshot for the Unpacked Seminar website. Edit the provided portrait: replace ONLY its blank white background with a natural, quietly scholarly university study interior, softly defocused light oak bookshelves with a few muted book spines and diffuse daylight from a window. Warm greige and subdued sage palette, subtle depth, restrained professional editorial photography, background sufficiently blurred and low contrast that the face remains dominant. Exact same 2:3 vertical framing and subject placement. Preserve the person's EXACT face, facial proportions, features, eyes, gaze, expression, age, hair, skin texture, body, pose and original black clothes. Do not re-render, beautify, smooth, relight or reshape the person. Natural hair edge blending only, no halos. No luxury-office styling, no furniture covering the person, no sharp visible book titles, no text, no logos, no illustration, no watermark. Output opaque full-image portrait, 1024x1536.",
+      "edit": "Only the background changed to a soft-focus academic study. Identity, clothing and 2:3 framing preserved."
+    },
+    "mengwei-he-scholar.png": {
+      "name": "何孟伟",
+      "source": "mengwei-he-white.png",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: identity-preserve. Asset type: realistic academic committee headshot for the Unpacked Seminar website. Edit the provided portrait: replace ONLY its blank white background with a natural, quietly scholarly university study interior, softly defocused light oak bookshelves with a few muted book spines and diffuse daylight from a window. Warm greige and subdued sage palette, subtle depth, restrained professional editorial photography, background sufficiently blurred and low contrast that the face remains dominant. Exact same 2:3 vertical framing and subject placement. Preserve the person's EXACT face, facial proportions, features, eyes, gaze, expression, age, hair, skin texture, body, pose and original black clothes. Do not re-render, beautify, smooth, relight or reshape the person. Natural hair edge blending only, no halos. No luxury-office styling, no furniture covering the person, no sharp visible book titles, no text, no logos, no illustration, no watermark. Output opaque full-image portrait, 1024x1536.",
+      "edit": "Only the background changed to a soft-focus academic study. Identity, clothing and 2:3 framing preserved."
+    },
+    "mengwei-he-courtyard.png": {
+      "name": "何孟伟",
+      "source": "mengwei-he-scholar.png",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: identity-preserve. Edit target: the provided existing headshot of Mengwei He. Replace ONLY its indoor bookshelf background with a distinctly different OUTDOOR UNIVERSITY COURTYARD background: soft out-of-focus pale sandstone academic building with a quiet colonnade far behind, a hint of sage-green tree foliage, naturally diffused overcast daylight. Restrained warm greige and muted green palette, softly blurred realistic environmental portrait, not a library, no bookshelves, no indoor window setting. Keep the exact same 2:3 vertical framing, person placement, head size, hair, face, facial proportions, eyes, gaze, expression, age, skin texture, neck, shoulders, pose, and black T-shirt. The person must remain unchanged from the input image; do not redraw, beautify, smooth, reshape or relight the face. Replace only background pixels with natural hair-edge integration and no halos. Background low contrast and sufficiently blurred, subject crisp. No university logos, text, badges, watermarks or identifiable institution. Output 1024x1536 opaque photographic image.",
+      "edit": "Replaced bookshelf background with a softly blurred university courtyard; preserve portrait identity and framing. Wang retains the study background."
+    }
+  }
+}
