@@ -111,6 +111,22 @@ window.SEMINAR_CONTENT = {
       "homepage": "http://www.ai4s-mgi.cn/xiongjie"
     },
     {
+      "id": "yuquan-li",
+      "name": "黎育权",
+      "englishName": "Yuquan Li",
+      "affiliation": "贵州大学计算机科学与技术学院；贵州省大数据实验室（依托贵州大学）",
+      "shortAffiliation": "贵州大学",
+      "title": "副教授；硕士生导师",
+      "role": "学术委员",
+      "avatar": "./assets/optimized/committee/yuquan-li-research-office.webp",
+      "research": [
+        "AI for Science",
+        "AI 分子设计"
+      ],
+      "bio": "黎育权，贵州大学副教授、硕士生导师，兰州大学化学信息学博士，曾在腾讯量子实验室联合培养。长期从事 AI for Science 研究，聚焦 AI 靶标发现与分子设计。\n\n针对分子设计空间近乎无限而实验验证昂贵缓慢的核心矛盾，探索“专家智慧 + 通用智能 + 专用工具 + 自动实验”协同的干湿闭环科学发现新范式，研究兴趣涵盖大模型智能体与小分子、多肽、蛋白设计。\n\n相关工作以主要作者身份发表于 Nature Machine Intelligence、The Innovation、Advanced Science 等期刊，主持国家自然科学基金等项目。现任 The Innovation、iMeta、Exploration 青年编委，The Innovation Drug Discovery 学术编辑。",
+      "homepage": "https://yuquan.li/"
+    },
+    {
       "id": "tong-xie",
       "name": "谢童",
       "englishName": "Tong Xie",
@@ -217,6 +233,18 @@ window.SEMINAR_CONTENT = {
       title: "Assistant Researcher; Deputy Director, Center for Materials Informatics and Data Science", role: "Academic Committee",
       research: ["AI4alloys", "Physics-guided AI"],
       bio: "Jie Xiong is an Assistant Researcher at the Materials Genome Institute of Shanghai University and Deputy Director of its Center for Materials Informatics and Data Science. His research focuses on AI-driven design of structural metallic materials and knowledge-guided general-purpose algorithms for materials. He has been selected for the Shanghai Pujiang Talent Program and received a Materials Genome Engineering Young Scientist Award. He has published more than 30 papers as first or corresponding author in journals including npj Computational Materials, Advanced Science, and Acta Materialia. He leads AI4S projects supported by national and Shanghai funding programmes, serves as secretary of the Materials Genome Engineering branch of the Chinese Materials Research Society, and is a young editorial board member of Journal of Materials Informatics and MGE Advances."
+    },
+    "yuquan-li": {
+      "name": "Yuquan Li",
+      "affiliation": "School of Computer Science and Technology, Guizhou University; Guizhou Provincial Big Data Laboratory (hosted by Guizhou University)",
+      "shortAffiliation": "Guizhou University",
+      "title": "Associate Professor; Master’s Supervisor",
+      "role": "Academic Committee",
+      "research": [
+        "AI for Science",
+        "AI-driven molecular design"
+      ],
+      "bio": "Yuquan Li is an Associate Professor and master’s supervisor at Guizhou University. He received his PhD in Cheminformatics from Lanzhou University and undertook joint training at Tencent Quantum Lab. His research focuses on AI for Science, particularly AI-driven target discovery and molecular design.\n\nTo address the challenge of a virtually limitless molecular design space and costly, slow experimental validation, he explores closed-loop scientific discovery that connects computational and experimental work through human expertise, general-purpose AI, specialized tools, and automated experimentation. His interests include large language model agents and the design of small molecules, peptides, and proteins.\n\nHis work as a principal author has appeared in Nature Machine Intelligence, The Innovation, and Advanced Science. He leads projects supported by the National Natural Science Foundation of China and other funding sources. He serves on the young editorial boards of The Innovation, iMeta, and Exploration, and as an Academic Editor of The Innovation Drug Discovery."
     },
     "tong-xie": {
       name: "Tong Xie", affiliation: "UNSW Sydney; 律动造物", shortAffiliation: "UNSW Sydney · 律动造物",

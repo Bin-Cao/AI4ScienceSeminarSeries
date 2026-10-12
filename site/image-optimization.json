@@ -242,11 +242,22 @@
       "mode": "lossless WebP",
       "sourceSha256": "9157de37baa2781d9eb548d4003856ad5f0784894c796d82d4dd903353d05c22",
       "optimizedSha256": "96a97d98b71edbd8f3c10eeed240f1db0d95ea14f571c76252bb75b9c99c884f"
+    },
+    {
+      "source": "assets/committee/yuquan-li-research-office.png",
+      "target": "assets/optimized/committee/yuquan-li-research-office.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 2305111,
+      "optimizedBytes": 288658,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "dc0b77d7845dab2c815091c9267b91da1fee2526d1b5311fc3b0bc2650a9e1e7",
+      "optimizedSha256": "e5a07f251525149cb235ca77fbce764c39e1184bd7edb745440e5431887a706a"
     }
   ],
   "activePageAssets": {
-    "count": 17,
-    "beforeBytes": 8945664,
-    "afterBytes": 2090540
+    "count": 18,
+    "beforeBytes": 11250775,
+    "afterBytes": 2379198
   }
 }
