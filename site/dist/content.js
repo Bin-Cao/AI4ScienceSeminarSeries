@@ -5,16 +5,16 @@ window.SEMINAR_CONTENT = {
   registrationUrl: null,
   speakerEmail: "bincao@hkust-gz.edu.cn",
   collaborationEmail: "bincao@hkust-gz.edu.cn",
-  wechat: { name: "SciMindBin", qrCode: "./assets/scimindbin.jpg" },
+  wechat: { name: "SciMindBin", qrCode: "./assets/optimized/scimindbin.webp" },
   acknowledgements: [
-    { id: "hkust", name: "香港科技大学", englishName: "The Hong Kong University of Science and Technology", logo: "./assets/institutions/hkust-classic.png" },
-    { id: "cuhk", name: "香港中文大学", englishName: "The Chinese University of Hong Kong", logo: "./assets/institutions/cuhk.svg" },
-    { id: "tsinghua", name: "清华大学", englishName: "Tsinghua University", logo: "./assets/institutions/tsinghua.svg" },
-    { id: "ustc", name: "中国科学技术大学", englishName: "University of Science and Technology of China", logo: "./assets/institutions/ustc.svg" },
-    { id: "ntu", name: "南洋理工大学", englishName: "Nanyang Technological University, Singapore", logo: "./assets/institutions/ntu.png" },
+    { id: "hkust", name: "香港科技大学", englishName: "The Hong Kong University of Science and Technology", logo: "./assets/optimized/institutions/hkust-classic.webp" },
+    { id: "cuhk", name: "香港中文大学", englishName: "The Chinese University of Hong Kong", logo: "./assets/optimized/institutions/cuhk.svg" },
+    { id: "tsinghua", name: "清华大学", englishName: "Tsinghua University", logo: "./assets/optimized/institutions/tsinghua.svg" },
+    { id: "ustc", name: "中国科学技术大学", englishName: "University of Science and Technology of China", logo: "./assets/optimized/institutions/ustc.svg" },
+    { id: "ntu", name: "南洋理工大学", englishName: "Nanyang Technological University, Singapore", logo: "./assets/optimized/institutions/ntu.webp" },
     { id: "ucl", name: "UCL · 伦敦大学学院", englishName: "University College London", logo: "./assets/institutions/ucl.svg" },
-    { id: "unsw", name: "新南威尔士大学", englishName: "UNSW Sydney", logo: "./assets/institutions/unsw.png" },
-    { id: "sydney", name: "悉尼大学", englishName: "The University of Sydney", logo: "./assets/institutions/sydney.svg" }
+    { id: "unsw", name: "新南威尔士大学", englishName: "UNSW Sydney", logo: "./assets/optimized/institutions/unsw.webp" },
+    { id: "sydney", name: "悉尼大学", englishName: "The University of Sydney", logo: "./assets/optimized/institutions/sydney.svg" }
   ],
   seminars: [
     {
@@ -86,7 +86,7 @@ window.SEMINAR_CONTENT = {
       "shortAffiliation": "中国科学技术大学",
       "title": "长聘副研究员",
       "role": "学术委员",
-      "avatar": "./assets/committee/pengkun-wang-scholar.png",
+      "avatar": "./assets/optimized/committee/pengkun-wang-scholar.webp",
       "research": [
         "开放环境深度学习",
         "AI4Science"
@@ -102,7 +102,7 @@ window.SEMINAR_CONTENT = {
       "shortAffiliation": "上海大学",
       "title": "助理研究员；材料信息与数据科学中心副主任",
       "role": "学术委员",
-      "avatar": "./assets/committee/jie-xiong.png",
+      "avatar": "./assets/optimized/committee/jie-xiong.webp",
       "research": [
         "AI4alloys",
         "Physics-guided AI"
@@ -137,7 +137,7 @@ window.SEMINAR_CONTENT = {
       "shortAffiliation": "悉尼大学",
       "title": "博士后研究员",
       "role": "学术委员",
-      "avatar": "./assets/committee/mengwei-he-courtyard.png",
+      "avatar": "./assets/optimized/committee/mengwei-he-courtyard.webp",
       "research": [
         "短程有序",
         "AI4S"

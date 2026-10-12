@@ -1,0 +1,252 @@
+{
+  "policy": "Preserve source assets, original resolution and aspect ratio. High-quality WebP for photos and posters; pixel-verified lossless encoding for logos and QR. Keep originals when encoding saves less than 2%.",
+  "entries": [
+    {
+      "source": "assets/committee/bin-cao.jpg",
+      "target": "assets/committee/bin-cao.jpg",
+      "width": 960,
+      "height": 1440,
+      "originalBytes": 63768,
+      "optimizedBytes": 63768,
+      "mode": "original already compact",
+      "sourceSha256": "66118e66280b5dbaa1eae46566d3f0e5aa5140e5ef544882af634859c255b7d7",
+      "optimizedSha256": "66118e66280b5dbaa1eae46566d3f0e5aa5140e5ef544882af634859c255b7d7"
+    },
+    {
+      "source": "assets/committee/jie-xiong.png",
+      "target": "assets/optimized/committee/jie-xiong.webp",
+      "width": 599,
+      "height": 868,
+      "originalBytes": 727870,
+      "optimizedBytes": 72056,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "ea76530eee3230f467d96ee21a257431df951dcf5af807493348b89b6a1a230f",
+      "optimizedSha256": "cc060d8f51b9a2129382d745a150bda43603e3a402f28feaa496c4c8a25d9ac4"
+    },
+    {
+      "source": "assets/committee/mengwei-he-courtyard.png",
+      "target": "assets/optimized/committee/mengwei-he-courtyard.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 1905961,
+      "optimizedBytes": 169152,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "936ef9d590d6476a09b51a7eee02ba8985a2391324c7a6f99e1cc244a72d12c0",
+      "optimizedSha256": "37fa3c83d12b3f0e0db0ea5d2d0f3fddf4260cd5a432cc4f3387ab9a6eba261b"
+    },
+    {
+      "source": "assets/committee/mengwei-he-scholar.png",
+      "target": "assets/optimized/committee/mengwei-he-scholar.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 1913879,
+      "optimizedBytes": 171100,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "70f04d2a43d8541b774726df2360c1368ae2d03c21a8dfe92ca06d05ef6396d8",
+      "optimizedSha256": "a0feeee537c4c22fa1cb6ce1597761e318ec0f09c05fb2cdc2263def3a6374d9"
+    },
+    {
+      "source": "assets/committee/mengwei-he-white.png",
+      "target": "assets/optimized/committee/mengwei-he-white.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 1707434,
+      "optimizedBytes": 152228,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "92808fbbbc15f0cd84a3088b1bf626fb1bb91860227bdc995a8217b5c68f941d",
+      "optimizedSha256": "698a5d5f97fd8a64ac555ba218ca59b7b3ab6d30e45d64c554e029f32098d589"
+    },
+    {
+      "source": "assets/committee/pengkun-wang-scholar.png",
+      "target": "assets/optimized/committee/pengkun-wang-scholar.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 2215678,
+      "optimizedBytes": 286024,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "4a0677a0994519752885fcdcc252b6fb373282cc4a505608382f96d507ae44e3",
+      "optimizedSha256": "063e1f7028950f96b586c801b3a9436ef1beea54bb037618c6a3e165f7633a4b"
+    },
+    {
+      "source": "assets/committee/pengkun-wang-white.png",
+      "target": "assets/optimized/committee/pengkun-wang-white.webp",
+      "width": 1024,
+      "height": 1536,
+      "originalBytes": 2104443,
+      "optimizedBytes": 281040,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "5008bfcd237c757b2fceb8fa906ba9461172ca35d8c54afcbeca1569fa6339af",
+      "optimizedSha256": "c56445f7f7ca5f2e3b79fd18ca6dc74491c2543adb88136b53a139903e010b8f"
+    },
+    {
+      "source": "assets/committee/tong-xie.jpg",
+      "target": "assets/committee/tong-xie.jpg",
+      "width": 986,
+      "height": 1216,
+      "originalBytes": 77539,
+      "optimizedBytes": 77539,
+      "mode": "original already compact",
+      "sourceSha256": "eeca2fdaef89b6cc356df5cd3ba35412321baabd4c9bf1cd55b195b8a639441c",
+      "optimizedSha256": "eeca2fdaef89b6cc356df5cd3ba35412321baabd4c9bf1cd55b195b8a639441c"
+    },
+    {
+      "source": "assets/committee/yizheng-wang.jpeg",
+      "target": "assets/committee/yizheng-wang.jpeg",
+      "width": 1706,
+      "height": 1280,
+      "originalBytes": 301805,
+      "optimizedBytes": 301805,
+      "mode": "original already compact",
+      "sourceSha256": "a62a6ec851a17a797945d379d51f12b20853135a40b5292585f7380faef04dde",
+      "optimizedSha256": "a62a6ec851a17a797945d379d51f12b20853135a40b5292585f7380faef04dde"
+    },
+    {
+      "source": "assets/favicon.svg",
+      "target": "assets/optimized/favicon.svg",
+      "width": 32,
+      "height": 32,
+      "originalBytes": 277,
+      "optimizedBytes": 267,
+      "mode": "pixel-verified SVG minification",
+      "sourceSha256": "c84ae8395c8295d5ca9a9f66258da39f8389a0a19039180fdd39859263c67d24",
+      "optimizedSha256": "891b1469cf17ed1c27e88533a254fcd97f992321c48bb7221379de0ebfba465b"
+    },
+    {
+      "source": "assets/institutions/cuhk.svg",
+      "target": "assets/optimized/institutions/cuhk.svg",
+      "width": 560,
+      "height": 100,
+      "originalBytes": 71822,
+      "optimizedBytes": 70283,
+      "mode": "pixel-verified SVG minification",
+      "sourceSha256": "bc7a6288a139c4d645840e7e33fc39bd21b7b4d173241ba4fe7142cb2e5338fe",
+      "optimizedSha256": "f762b24e4a2482f2e84ff261eaa886c7c3855469b75b10009dfea7595ed1099e"
+    },
+    {
+      "source": "assets/institutions/hkust-classic.png",
+      "target": "assets/optimized/institutions/hkust-classic.webp",
+      "width": 391,
+      "height": 122,
+      "originalBytes": 29221,
+      "optimizedBytes": 14396,
+      "mode": "lossless WebP",
+      "sourceSha256": "4ebfa78f77a6ba2bee085ca0d3e2e9ccdb34194aca41f971ae26bef06a7a1ddd",
+      "optimizedSha256": "2c32335d2a498f76cdbe89eebc24ef04353d768f41726da2862b5e3707e57e0a"
+    },
+    {
+      "source": "assets/institutions/hkust.svg",
+      "target": "assets/institutions/hkust.svg",
+      "width": 187,
+      "height": 60,
+      "originalBytes": 5902,
+      "optimizedBytes": 5902,
+      "mode": "original already compact",
+      "sourceSha256": "7653f73b7a5b51c65c3f87f7a95ed9586a4ba2b516a61063b70ec5d4649a31c6",
+      "optimizedSha256": "7653f73b7a5b51c65c3f87f7a95ed9586a4ba2b516a61063b70ec5d4649a31c6"
+    },
+    {
+      "source": "assets/institutions/ntu.png",
+      "target": "assets/optimized/institutions/ntu.webp",
+      "width": 3006,
+      "height": 1079,
+      "originalBytes": 357899,
+      "optimizedBytes": 104862,
+      "mode": "lossless WebP",
+      "sourceSha256": "45535780334a04c2384d82468ab49c2c8f6d5a77f717246dc42f0c6ff6451503",
+      "optimizedSha256": "878e6863c6e36bc598b916a05910b2ed8d64fc3a2f5c543473ed9dae078ec09d"
+    },
+    {
+      "source": "assets/institutions/sydney.svg",
+      "target": "assets/optimized/institutions/sydney.svg",
+      "width": 233,
+      "height": 80,
+      "originalBytes": 23537,
+      "optimizedBytes": 22875,
+      "mode": "pixel-verified SVG minification",
+      "sourceSha256": "7fba5a8030b0df640bf205c821423f7d70af38488fa450648276e6a59ad23654",
+      "optimizedSha256": "0d6eb27653a8ca920f3065fd743fd8052b9ef47b2cd2015f9ca17dfdf9885940"
+    },
+    {
+      "source": "assets/institutions/tsinghua.svg",
+      "target": "assets/optimized/institutions/tsinghua.svg",
+      "width": 284,
+      "height": 284,
+      "originalBytes": 426616,
+      "optimizedBytes": 324207,
+      "mode": "pixel-verified SVG minification",
+      "sourceSha256": "7858ebf313764411c217dd8db7769180c5fd69e53aa374510a109eb4c0f22715",
+      "optimizedSha256": "baec5c09a671cf7f42d0fe101646e435b25091e81f45cb91ef36f7d85d118d54"
+    },
+    {
+      "source": "assets/institutions/ucl.svg",
+      "target": "assets/institutions/ucl.svg",
+      "width": 1394,
+      "height": 391,
+      "originalBytes": 1527,
+      "optimizedBytes": 1527,
+      "mode": "original already compact",
+      "sourceSha256": "eb4e7b0044f5fa30e7d1cfb3bc1301c6f68103c1b79a916eb0d2ca9d97ec85d8",
+      "optimizedSha256": "eb4e7b0044f5fa30e7d1cfb3bc1301c6f68103c1b79a916eb0d2ca9d97ec85d8"
+    },
+    {
+      "source": "assets/institutions/unsw.png",
+      "target": "assets/optimized/institutions/unsw.webp",
+      "width": 330,
+      "height": 140,
+      "originalBytes": 30857,
+      "optimizedBytes": 19294,
+      "mode": "lossless WebP",
+      "sourceSha256": "95364d33dab96754189ad7c9bf8135f6ce524c91e68a3ee70ed844f5d657fdb7",
+      "optimizedSha256": "55c238b284b9c883aa40d5684e86533f4df76487e1f33cedb00cea4e66e98335"
+    },
+    {
+      "source": "assets/institutions/ustc.svg",
+      "target": "assets/optimized/institutions/ustc.svg",
+      "width": 142,
+      "height": 142,
+      "originalBytes": 113004,
+      "optimizedBytes": 103647,
+      "mode": "pixel-verified SVG minification",
+      "sourceSha256": "3df45d5a75f0f2135cc09299516557d7485ded2b813cf6f4d7e6ca2f22ceea8e",
+      "optimizedSha256": "1d29913558c6fde079a2662a153b8a810288dbfe0972188bb6bbb560c8284d09"
+    },
+    {
+      "source": "assets/posters/seminar-001-en.png",
+      "target": "assets/optimized/posters/seminar-001-en.webp",
+      "width": 1060,
+      "height": 1484,
+      "originalBytes": 2831927,
+      "optimizedBytes": 550904,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "010e92789de091270997dd1aa14ae1262eac4b9887e8350168a375fe0582f782",
+      "optimizedSha256": "e6edfe96da1de4c44c7701fe6708d9b56570c77812ee15f6daced6abd1bc8221"
+    },
+    {
+      "source": "assets/posters/seminar-001-unpacked-en.png",
+      "target": "assets/optimized/posters/seminar-001-unpacked-en.webp",
+      "width": 1060,
+      "height": 1484,
+      "originalBytes": 2548003,
+      "optimizedBytes": 424724,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "88cbc56ac5d829a8dd3f677bdddc63030a69a4841c585aaa1af9f7cd6fc2f7f9",
+      "optimizedSha256": "c7895964ced781f31bfe00e6ce6412d1016766d9c2fdb6e62f60468a75cdbb40"
+    },
+    {
+      "source": "assets/scimindbin.jpg",
+      "target": "assets/optimized/scimindbin.webp",
+      "width": 430,
+      "height": 430,
+      "originalBytes": 50280,
+      "optimizedBytes": 34114,
+      "mode": "lossless WebP",
+      "sourceSha256": "9157de37baa2781d9eb548d4003856ad5f0784894c796d82d4dd903353d05c22",
+      "optimizedSha256": "96a97d98b71edbd8f3c10eeed240f1db0d95ea14f571c76252bb75b9c99c884f"
+    }
+  ],
+  "activePageAssets": {
+    "count": 17,
+    "beforeBytes": 8945664,
+    "afterBytes": 2090540
+  }
+}

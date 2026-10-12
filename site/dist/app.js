@@ -20,7 +20,7 @@
   };
   const person = (avatar, name) => {
     const source = safeAsset(avatar);
-    return source ? `<img src="${escapeHTML(source)}" alt="${escapeHTML(name)}" loading="lazy" />` : icon("person", "person-icon");
+    return source ? `<img src="${escapeHTML(source)}" alt="${escapeHTML(name)}" loading="lazy" decoding="async" />` : icon("person", "person-icon");
   };
   const card = (seminar) => {
     const href = escapeHTML(pageUrl(`./seminars/${encodeURIComponent(seminar.id)}/index.html`));

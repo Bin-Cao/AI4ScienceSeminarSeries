@@ -45,6 +45,7 @@
       img.src = url.href;
       img.alt = name || "";
       img.loading = "lazy";
+      img.decoding = "async";
       document.querySelectorAll(selector).forEach((element) => element.replaceChildren(img.cloneNode(true)));
     } catch { /* Keep the intentional empty portrait when a URL is invalid. */ }
   }
