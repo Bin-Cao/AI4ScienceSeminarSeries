@@ -275,11 +275,22 @@
       "mode": "WebP quality 94, original dimensions",
       "sourceSha256": "4e15e34020c38ac9b3fdeec4a06acb6fcac773556d552ed636c7c3aea40233f2",
       "optimizedSha256": "9b80eaf611d07cf81e8729330362736677f5e0e9dbe377050d61c09ba4db85df"
+    },
+    {
+      "source": "assets/committee/rui-jiao.jpeg",
+      "target": "assets/optimized/committee/rui-jiao.webp",
+      "width": 388,
+      "height": 517,
+      "originalBytes": 88216,
+      "optimizedBytes": 56092,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "0ebbb16a838608c7092b11a68de94e6a15a7cb8a1046622314d02b6edc00b60c",
+      "optimizedSha256": "a979caeaaea4b93a92b5db594eec270f0b40a3bf6d9dc3eb3069a72fd61d2a32"
     }
   ],
   "activePageAssets": {
-    "count": 20,
-    "beforeBytes": 14648617,
-    "afterBytes": 2591596
+    "count": 21,
+    "beforeBytes": 14736833,
+    "afterBytes": 2647688
   }
 }

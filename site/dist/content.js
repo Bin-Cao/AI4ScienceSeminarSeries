@@ -177,6 +177,22 @@ window.SEMINAR_CONTENT = {
       "homepage": "https://yliukj.github.io/"
     },
     {
+      "id": "rui-jiao",
+      "name": "矫瑞",
+      "englishName": "Rui Jiao",
+      "affiliation": "清华大学计算机科学与技术系",
+      "shortAffiliation": "清华大学",
+      "title": "博士",
+      "role": "学术委员",
+      "avatar": "./assets/optimized/committee/rui-jiao.webp",
+      "research": [
+        "几何深度学习",
+        "材料发现"
+      ],
+      "bio": "矫瑞，清华大学计算机科学与技术系博士毕业生，师从刘洋教授。研究聚焦几何深度学习与生成模型，关注 AI 在材料科学和生命科学中的应用。\n\n代表成果包括晶体扩散模型 DiffCSP 与三维分子预训练模型 EPT，分别发表于 NeurIPS 和 Nature Communications，Google Scholar 总引用量 2000 余次。博士期间曾在微软剑桥研究院、阿里巴巴达摩院及通义实验室开展科研实习，获清华大学优秀毕业生及优秀博士学位论文奖。",
+      "homepage": "https://jiaor17.github.io/"
+    },
+    {
       "id": "ruiming-zhu",
       "name": "朱睿明",
       "englishName": "Ruiming Zhu",
@@ -264,6 +280,18 @@ window.SEMINAR_CONTENT = {
         "AI for Weather and Climate"
       ],
       "bio": "Yang Liu is a Postdoctoral Fellow at The Chinese University of Hong Kong, working with Professor Hong Cheng. He received his Ph.D. in the Individualized Interdisciplinary Program (Data Science and Analytics) from The Hong Kong University of Science and Technology in 2025. His research interests center on AI for weather and climate, particularly geometric deep learning and foundation models for understanding Earth-system dynamics.\n\nHis work spans equivariant neural networks for physical dynamics, global subseasonal-to-seasonal weather forecasting, and downstream weather applications, including wind power prediction and extreme weather prediction. He has published at major machine learning and AI conferences, including ICLR, ICML, NeurIPS, CVPR, WWW, and KDD, as well as in journals such as IEEE Transactions on Knowledge and Data Engineering and National Science Review."
+    },
+    "rui-jiao": {
+      "name": "Rui Jiao",
+      "affiliation": "Department of Computer Science and Technology, Tsinghua University",
+      "shortAffiliation": "Tsinghua University",
+      "title": "PhD",
+      "role": "Academic Committee",
+      "research": [
+        "Geometric deep learning",
+        "Materials discovery"
+      ],
+      "bio": "Rui Jiao received his PhD from the Department of Computer Science and Technology at Tsinghua University, supervised by Professor Yang Liu. His research focuses on geometric deep learning and generative models, with applications of AI in materials science and life sciences.\n\nHis representative work includes the crystal diffusion model DiffCSP and the 3D molecular pretraining model EPT, published at NeurIPS and in Nature Communications, respectively. His work has received over 2,000 citations on Google Scholar. During his doctoral studies, he completed research internships at Microsoft Research Cambridge, Alibaba DAMO Academy, and Tongyi Lab. He received Tsinghua University’s Outstanding Graduate and Outstanding Doctoral Dissertation awards."
     },
     "ruiming-zhu": {
       "name": "Ruiming Zhu",

@@ -2,6 +2,12 @@
   "tool": "Built-in image_gen",
   "prompt": "Preserve the exact identity, facial features, age, hairstyle, expression, skin texture and original black clothing. Use a natural opaque pure-white background with soft diffuse lighting. Center the upper-chest portrait in a 2:3 frame, full hair visible and consistent comfortable headroom. No beautification, facial reshaping, added text or graphics.",
   "portraits": {
+    "rui-jiao.jpeg": {
+      "name": "矫瑞",
+      "source": "../../../学术委员会/学术委员(12).docx / word/media/image1.jpeg",
+      "tool": "DOCX embedded image extraction",
+      "edit": "Original photograph extracted without edits; use the existing committee portrait frame."
+    },
     "mengwei-he-white.png": {
       "name": "何孟伟",
       "source": "../../../学术委员会/学术委员(10).docx / word/media/image1.png"
