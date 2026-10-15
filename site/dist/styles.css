@@ -728,10 +728,10 @@
   .seminar-speaker .speaker-avatar{width:44px}
 }
 
-/* Four committee members per desktop row, with room for future additions. */
+/* Five committee members per desktop row; ten members fill two rows. */
 @media(min-width:1101px){
   .people-layout{grid-template-columns:200px minmax(0,1fr);gap:36px}
-  .committee-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 20px}
+  .committee-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:28px 20px}
   .committee-member{display:flex;flex-direction:column;align-items:flex-start;gap:0}
   .committee-avatar{width:104px;margin-bottom:18px}
   .committee-member h4{margin:0 0 10px;font-size:17px}
@@ -837,7 +837,7 @@
 .hero-tagline{margin-top:18px;font-size:16px;line-height:1.7;letter-spacing:.02em;color:var(--muted)}
 [data-member-id="mengwei-he"] .committee-avatar,[data-member-id="pengkun-wang"] .committee-avatar,[data-member-id="mengwei-he"] .member-dialog-avatar,[data-member-id="pengkun-wang"] .member-dialog-avatar{background:#e9e5df}
 [data-member-id="mengwei-he"] img,[data-member-id="pengkun-wang"] img{object-position:50% 50%}
-@media(min-width:1101px){.committee-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:20px;row-gap:24px}}
+@media(min-width:1101px){.committee-grid{grid-template-columns:repeat(5,minmax(0,1fr));column-gap:20px;row-gap:24px}}
 @media(max-width:680px){
  .brand .unpacked-mark,.footer-main .unpacked-mark{width:54px;height:35px}
  .brand-type,.header-inner .brand-type{font-size:20px}
