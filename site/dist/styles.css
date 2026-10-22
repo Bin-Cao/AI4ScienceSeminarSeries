@@ -764,6 +764,8 @@
 .session-detail-overview{grid-template-columns:220px minmax(0,1fr);gap:60px;border-top:1px solid var(--line);padding-block:64px}
 .session-detail-overview .episode-detail{font-size:15px;line-height:2;max-width:none}
 .session-keywords{font-size:11px;line-height:1.8;letter-spacing:.02em;margin:0 0 24px}
+.session-audience{font-size:13px;line-height:1.8;color:var(--muted);margin-top:24px}
+.session-detail-overview [data-episode-outcome]{white-space:pre-line}
 .session-subheading{font-size:22px;font-weight:500;margin-top:32px;margin-bottom:12px}
 /* Speaker and host share one equally sized profile treatment. */
 .session-people{display:grid;grid-template-columns:minmax(0,1fr);grid-auto-rows:1fr;gap:0;border-top:1px solid var(--line);padding-block:0}

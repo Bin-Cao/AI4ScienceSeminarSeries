@@ -41,13 +41,28 @@ window.SEMINAR_CONTENT = {
       ]
     },
     {
-      id: "002", category: "AI × LIFE SCIENCE", title: "探索生命的计算视角",
-      description: "从数据、模型到实验，聊清生命科学研究中的技术选择与验证经验。",
-      status: "规划中", topicNote: "拟议方向", featured: false,
-      speaker: null, affiliation: null, avatar: null, date: null, format: null,
-      speakerBio: null, host: { name: null, affiliation: null, avatar: null, bio: null },
+      id: "002", category: "AI × LIFE SCIENCE", title: "从 AI for Biology 到虚拟细胞",
+      description: "从生物学基础模型到虚拟细胞，探讨细胞状态表征、多组学整合、基因扰动预测与细胞动态建模的技术路线和局限。",
+      status: "即将举行", topicNote: "第 2 期 · 中文报告", featured: false,
+      speaker: "赵正阳", affiliation: "北京大学前沿交叉学科研究院", shortAffiliation: "北京大学",
+      speakerTitle: "博士生", speakerResearch: ["AI for Biology", "基因组学", "生物信息学"],
+      avatar: "./assets/optimized/speakers/zhengyang-zhao.webp",
+      speakerBio: "赵正阳，北京大学前沿交叉学科研究院博士生，研究方向为人工智能与生物学交叉（AI for Biology），主要关注基因组学、生物信息学以及人工智能在生命科学中的应用。曾在北京大学、清华大学多个实验室从事研究助理工作。",
+      hostId: "yizheng-wang",
+      date: "11月7日 10:00（北京时间）", format: "腾讯会议",
+      meetingUrl: "https://meeting.tencent.com/dm/7rmSlRkoEaN2", meetingNumber: "150-171-149",
       registrationUrl: null, completed: false,
-      detail: "拟关注人工智能与生命科学的交叉研究，包括分子建模、生命系统理解，以及计算方法与实验之间的协作。该议题为规划方向，讲者及最终主题尚未确定。"
+      registrationNote: "11月7日，报告10:00开始，会议时段为10:00–12:00（北京时间 UTC+8）。报告语言为中文，听众无特殊背景要求。",
+      detail: "人工智能正在深刻改变生命科学的研究范式，推动生物学研究从传统的数据分析与规律发现，逐步走向复杂生命系统的预测、生成与模拟。从蛋白质结构预测与设计，到基因组学建模、单细胞多组学分析，AI for Biology 正在不同生物学尺度上展现出巨大的应用潜力。\n\n本报告将首先梳理 AI for Biology 的主要技术进展及研究范式，随后聚焦虚拟细胞领域，介绍细胞基础模型、多组学数据整合、基因扰动预测及细胞动态建模等核心研究方向，结合代表性工作探讨不同技术方法的建模思路、适用场景与局限性。",
+      outcome: "对 AI for Biology 的主要研究方向和虚拟细胞的技术进展形成系统认识，理解不同建模范式的适用场景及技术局限。\n\n了解从细胞基础模型走向虚拟细胞所面临的核心科学问题与技术挑战，为未来相关研究的选题与方法探索提供参考。",
+      audience: "无特殊背景要求",
+      keywords: ["AI for Biology", "Virtual Cell", "生物学基础模型", "单细胞多组学"],
+      resourceUrl: null,
+      takeaways: [
+        { title: "AI for Biology 的主要技术范式与发展趋势", text: "梳理人工智能在蛋白质、基因组学及单细胞生物学等领域的应用，重点介绍生物学基础模型、生成式模型等技术的发展，讨论不同生物学尺度下模型构建的共性与差异。" },
+        { title: "虚拟细胞的核心任务与技术路线", text: "围绕细胞状态表征、多组学数据整合、基因扰动预测及动态轨迹建模等核心任务，介绍虚拟细胞的代表性研究工作，比较数据驱动、机制驱动及混合建模等方法的技术特点与局限。" },
+        { title: "虚拟细胞的关键挑战与未来研究方向", text: "讨论现有细胞模型在泛化能力、因果推断、动态模拟和跨尺度建模等方面的不足，探讨高通量扰动实验、主动学习及机制约束建模等技术的发展潜力，以及构建可验证虚拟细胞的可能路径。" }
+      ]
     },
     {
       id: "003", category: "AI × PHYSICAL SCIENCE", title: "发现物质世界的新可能",
@@ -217,6 +232,7 @@ window.SEMINAR_CONTENT = {
       "shortAffiliation": "清华大学",
       "title": "博士生",
       "role": "学术委员",
+      "shortBio": "清华大学工程力学系博士生、清华大学未来学者，研究人工智能与物理计算的结合（Physical AI），重点关注 AI for PDEs 与计算固体力学。",
       "avatar": "./assets/committee/yizheng-wang.jpeg",
       "research": [
         "AI for PDEs",
@@ -250,10 +266,23 @@ window.SEMINAR_CONTENT = {
       ]
     },
     "002": {
-      title: "A computational view of life",
-      description: "From data and models to experiments: technical choices and lessons in validation from life science research.",
-      status: "Planned", topicNote: "Proposed direction",
-      detail: "A proposed conversation at the intersection of AI and life science: molecular modelling, understanding biological systems, and collaboration between computation and experiments. This is a planning direction; the speaker and final topic have not yet been confirmed."
+      title: "From AI for Biology to Virtual Cells",
+      description: "From biological foundation models to virtual cells: approaches and limitations in cell-state representation, multi-omics integration, genetic perturbation prediction, and cell dynamics.",
+      status: "Upcoming", topicNote: "Session 2 · In Chinese",
+      date: "7 Nov, 10:00 Beijing (UTC+8)", format: "Tencent Meeting",
+      speaker: "Zhengyang Zhao", affiliation: "Academy for Advanced Interdisciplinary Studies, Peking University", shortAffiliation: "Peking University",
+      speakerTitle: "PhD Student", speakerResearch: ["AI for Biology", "Genomics", "Bioinformatics"],
+      speakerBio: "Zhengyang Zhao is a PhD student at the Academy for Advanced Interdisciplinary Studies, Peking University. His research lies at the intersection of artificial intelligence and biology (AI for Biology), with a focus on genomics, bioinformatics, and AI applications in the life sciences. He has worked as a research assistant in several laboratories at Peking University and Tsinghua University.",
+      registrationNote: "7 November. The talk starts at 10:00; the meeting runs 10:00–12:00 (Beijing time, UTC+8). Talk in Chinese; no specific background required.",
+      detail: "Artificial intelligence is reshaping research in the life sciences, moving biology beyond traditional data analysis and pattern discovery toward the prediction, generation, and simulation of complex living systems. From protein structure prediction and design to genomic modeling and single-cell multi-omics analysis, AI for Biology is showing considerable potential across biological scales.\n\nThis talk will first review the main technical advances and research paradigms in AI for Biology, then focus on virtual cells. It will cover cell foundation models, multi-omics data integration, genetic perturbation prediction, and cell dynamics, using representative studies to examine the modeling approaches, use cases, and limitations of different methods.",
+      outcome: "Gain a systematic understanding of the main research directions in AI for Biology and technical advances in virtual cells, including the use cases and limitations of different modeling paradigms.\n\nUnderstand the central scientific questions and technical challenges in moving from cell foundation models toward virtual cells, to inform future research topics and methodological choices.",
+      audience: "No specific background required",
+      keywords: ["AI for Biology", "Virtual Cell", "Biological foundation models", "Single-cell multi-omics"],
+      takeaways: [
+        { title: "AI for Biology: paradigms and trends", text: "Review AI applications in proteins, genomics, and single-cell biology, with a focus on biological foundation models and generative models. Discuss what modeling approaches share and how they differ across biological scales." },
+        { title: "Virtual cells: core tasks and approaches", text: "Explore cell-state representation, multi-omics integration, genetic perturbation prediction, and dynamic trajectory modeling through representative studies. Compare the strengths and limitations of data-driven, mechanistic, and hybrid approaches." },
+        { title: "Challenges and future research directions", text: "Discuss limitations in generalization, causal inference, dynamic simulation, and cross-scale modeling. Explore the potential of high-throughput perturbation experiments, active learning, and mechanistic constraints in building verifiable virtual cells." }
+      ]
     },
     "003": {
       title: "New possibilities in the physical world",
@@ -310,6 +339,7 @@ window.SEMINAR_CONTENT = {
       name: "Yizheng Wang", affiliation: "Department of Engineering Mechanics, School of Aerospace Engineering, Tsinghua University", shortAffiliation: "Tsinghua University",
       title: "PhD Student", role: "Academic Committee",
       research: ["AI for PDEs", "Computational solid mechanics"],
+      shortBio: "A PhD student in Engineering Mechanics and a Future Scholar at Tsinghua University. His research connects artificial intelligence with physics-based computation (Physical AI), focusing on AI for PDEs and computational solid mechanics.",
       bio: "Yizheng Wang is a PhD student in Engineering Mechanics and a Future Scholar at Tsinghua University. His research connects artificial intelligence with physics-based computation (Physical AI), focusing on AI for PDEs and computational solid mechanics. He has worked as a Research Assistant with Microsoft Research AI for Science and visited Bauhaus-Universität Weimar in Germany. His work covers physics-informed neural networks, operator learning, and deep energy methods, with publications in Applied Mechanics Reviews, Nature Communications, JMPS, and CMAME. He has also contributed to an English-language monograph on scientific machine learning."
     },
     "jie-xiong": {

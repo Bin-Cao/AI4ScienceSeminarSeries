@@ -13,6 +13,7 @@
   set("[data-episode-detail]", seminar.detail);
   if (seminar.confirmationNote) set("[data-episode-confirmation]", seminar.confirmationNote);
   if (seminar.outcome) set("[data-episode-outcome]", seminar.outcome);
+  if (seminar.audience) set("[data-episode-audience]", seminar.audience);
   if (seminar.keywords) set("[data-episode-keywords]", seminar.keywords.join(" · "));
   set("[data-episode-date]", seminar.date || t("date.pending"));
   set("[data-episode-format]", seminar.format || t("format.pending"));

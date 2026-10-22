@@ -286,11 +286,33 @@
       "mode": "WebP quality 94, original dimensions",
       "sourceSha256": "0ebbb16a838608c7092b11a68de94e6a15a7cb8a1046622314d02b6edc00b60c",
       "optimizedSha256": "a979caeaaea4b93a92b5db594eec270f0b40a3bf6d9dc3eb3069a72fd61d2a32"
+    },
+    {
+      "source": "assets/posters/seminar-002-en.png",
+      "target": "assets/optimized/posters/seminar-002-en.webp",
+      "width": 1060,
+      "height": 1484,
+      "originalBytes": 2399166,
+      "optimizedBytes": 404628,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "c194f771b24cdbc68bfc0e9cbb529fb13a9c95b05622ca7443b9d3df087d1b1b",
+      "optimizedSha256": "1f7afdfeb0cb21da9523458486806db034cd1e3827c60a164fe14d6e8ed58610"
+    },
+    {
+      "source": "assets/speakers/zhengyang-zhao.jpeg",
+      "target": "assets/optimized/speakers/zhengyang-zhao.webp",
+      "width": 1406,
+      "height": 2108,
+      "originalBytes": 896827,
+      "optimizedBytes": 223614,
+      "mode": "WebP quality 94, original dimensions",
+      "sourceSha256": "2d3bc28c8924293770549e67a962b08e46e9f3220dd40bb4f1747ef73a037df7",
+      "optimizedSha256": "3dba88477342d3704b038f963aa451b7d6cacbbfa231496d1294dd684f716bb5"
     }
   ],
   "activePageAssets": {
-    "count": 21,
-    "beforeBytes": 14736833,
-    "afterBytes": 2647688
+    "count": 23,
+    "beforeBytes": 18032826,
+    "afterBytes": 3275930
   }
 }
