@@ -308,11 +308,22 @@
       "mode": "WebP quality 94, original dimensions",
       "sourceSha256": "2d3bc28c8924293770549e67a962b08e46e9f3220dd40bb4f1747ef73a037df7",
       "optimizedSha256": "3dba88477342d3704b038f963aa451b7d6cacbbfa231496d1294dd684f716bb5"
+    },
+    {
+      "source": "assets/recaps/seminar-001-audience.png",
+      "target": "assets/optimized/recaps/seminar-001-audience.webp",
+      "width": 1586,
+      "height": 992,
+      "originalBytes": 1450347,
+      "optimizedBytes": 946840,
+      "mode": "lossless WebP",
+      "sourceSha256": "685c2352a518bbcea175a1d9116fdd683a089f5ef81f6a780d1b4d86107ae3b6",
+      "optimizedSha256": "4e83440a576bb90ea4453c03ea0c6e2fe8ab98ff51e80f971e982d5db65a9127"
     }
   ],
   "activePageAssets": {
-    "count": 23,
-    "beforeBytes": 18032826,
-    "afterBytes": 3275930
+    "count": 24,
+    "beforeBytes": 19483173,
+    "afterBytes": 4222770
   }
 }

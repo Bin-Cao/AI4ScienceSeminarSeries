@@ -10,6 +10,20 @@
   set("[data-episode-status]", seminar.status);
   set("[data-episode-note]", seminar.topicNote);
   set("[data-episode-description]", seminar.description);
+  set("[data-recap-attendance]", seminar.attendance || "");
+  set("[data-recap-title]", seminar.recapTitle || "");
+  set("[data-recap-intro]", seminar.recapIntro || "");
+  set("[data-recap-body]", seminar.recapBody || "");
+  set("[data-recap-thanks]", seminar.recapThanks || "");
+  set("[data-recap-caption]", seminar.recapImageCaption || "");
+  document.querySelectorAll("[data-session-recap]").forEach((section) => { section.hidden = !seminar.completed || !seminar.recapTitle; });
+  if (seminar.recapImage) {
+    const base = new URL("../../", location.href);
+    const image = document.querySelector("[data-recap-image]");
+    const link = document.querySelector("[data-recap-image-link]");
+    if (image) { image.src = new URL(seminar.recapImage, base).href; image.alt = seminar.recapImageAlt; }
+    if (link) link.href = new URL(seminar.recapImageOriginal || seminar.recapImage, base).href;
+  }
   set("[data-episode-detail]", seminar.detail);
   if (seminar.confirmationNote) set("[data-episode-confirmation]", seminar.confirmationNote);
   if (seminar.outcome) set("[data-episode-outcome]", seminar.outcome);
@@ -76,6 +90,16 @@
     set("[data-attend-label]", t("episode.ended.action"));
     set("[data-registration-status]", t("episode.ended"));
     set("[data-registration-note]", t("episode.ended.note"));
+    // Static meeting buttons must stop inviting visitors after a session ends.
+    document.querySelectorAll("[data-meeting-link]").forEach((link) => {
+      link.href = seminar.recapTitle ? "#recap" : "#overview";
+      link.textContent = t(seminar.recapTitle ? "recap.read" : "episode.ended.action");
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+    });
+    document.querySelectorAll("[data-meeting-url], [data-meeting-pending], [data-meeting-number-row]").forEach((element) => { element.hidden = true; });
+    document.querySelectorAll("[data-meeting-url]").forEach((link) => { link.removeAttribute("href"); });
+    set('[data-i18n="session.join"]', t("recap.follow"));
   } else if (seminar.meetingUrl) {
     try {
       const url = new URL(seminar.meetingUrl);

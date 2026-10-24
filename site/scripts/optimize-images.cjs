@@ -46,7 +46,7 @@ async function main() {
     const original = fs.readFileSync(source);
     const meta = await sharp(original).metadata();
     const vector = /\.svg$/i.test(source);
-    const lossless = vector || relative.startsWith('institutions/') || relative === 'scimindbin.jpg';
+    const lossless = vector || relative.startsWith('institutions/') || relative.startsWith('recaps/') || relative === 'scimindbin.jpg';
     let encoded;
     if (vector) {
       encoded = Buffer.from(compactSvg(original.toString('utf8')));

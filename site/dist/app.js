@@ -29,7 +29,7 @@
       <div class="seminar-main"><div class="seminar-category">${escapeHTML(seminar.category)}</div><h3><a href="${href}">${escapeHTML(seminar.title)}</a></h3><p>${escapeHTML(seminar.description)}</p><span class="seminar-chip">${escapeHTML(seminar.topicNote)} · ${escapeHTML(seminar.status)}</span></div>
       <div class="seminar-speaker"><div class="speaker-avatar">${person(seminar.avatar, seminar.speaker)}</div><div><strong>${escapeHTML(seminar.speaker || t("speaker.soon"))}</strong><small>${escapeHTML(seminar.shortAffiliation || seminar.affiliation || t("speaker.inviting"))}</small></div></div>
       <div class="seminar-meta"><span>${icon("calendar")}${escapeHTML(seminar.date || t("date.short"))}</span><span>${icon("screen")}${escapeHTML(seminar.format || t("format.pending"))}</span></div>
-      <a class="seminar-detail-link" href="${href}" aria-label="${escapeHTML(t("card.aria", { id: seminar.id, title: seminar.title }))}">${t("card.open")}</a>
+      <a class="seminar-detail-link" href="${href}" aria-label="${escapeHTML(t("card.aria", { id: seminar.id, title: seminar.title }))}">${t(seminar.completed ? "recap.read" : "card.open")}</a>
     </article>`;
   };
   const upcoming = content.seminars.filter((seminar) => !seminar.completed);
@@ -37,6 +37,17 @@
   if (document.querySelector("#seminar-list")) document.querySelector("#seminar-list").innerHTML = upcoming.length ? upcoming.map(card).join("") : `<div class="empty-state"><h3>${t("sessions.none.title")}</h3><p>${t("sessions.none.text")}</p></div>`;
   if (document.querySelector("#upcoming-count")) document.querySelector("#upcoming-count").textContent = String(upcoming.length).padStart(2, "0");
   if (past.length && document.querySelector("#past-panel")) document.querySelector("#past-panel").innerHTML = past.map(card).join("");
+  const recapSection = document.querySelector("[data-latest-recap]");
+  if (recapSection) {
+    const recap = past.filter((seminar) => seminar.recapTitle).at(-1);
+    recapSection.hidden = !recap;
+    if (recap) {
+      recapSection.querySelector("[data-recap-attendance]").textContent = recap.attendance;
+      recapSection.querySelector("[data-recap-title]").textContent = recap.recapTitle;
+      recapSection.querySelector("[data-recap-summary]").textContent = recap.description;
+      recapSection.querySelector("[data-recap-link]").href = pageUrl(`./seminars/${encodeURIComponent(recap.id)}/index.html#recap`);
+    }
+  }
   if (document.querySelector("#committee-grid")) {
     document.querySelector("#committee-grid").innerHTML = content.committee.filter(Boolean).map((member) => `<article class="committee-member confirmed-member" data-member-id="${escapeHTML(member.id)}">
       <div class="committee-avatar">${person(member.avatar, member.name)}</div>

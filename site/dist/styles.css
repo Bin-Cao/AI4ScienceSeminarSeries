@@ -817,6 +817,26 @@
   .session-meeting .episode-registration{padding-left:0}
 }
 
+/* Session recaps keep the site's editorial layout and original screenshot ratio. */
+.home-recap{display:grid;grid-template-columns:220px minmax(0,1fr);gap:60px;padding-block:48px;border-bottom:1px solid var(--line);align-items:center}
+.home-recap[hidden],.session-recap[hidden]{display:none}
+.recap-attendance{display:flex;flex-direction:column;gap:8px;color:var(--ink)}
+.recap-attendance strong{font-size:clamp(48px,6vw,72px);font-weight:500;letter-spacing:-3px;line-height:1.1}
+.recap-attendance>span{font-size:12px;line-height:1.8;color:var(--muted)}
+.home-recap-copy h2,.session-recap-body h2{font-size:clamp(25px,3vw,34px);line-height:1.5;font-weight:550;margin:12px 0 16px}
+.home-recap-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:18px}
+.session-recap{display:grid;grid-template-columns:220px minmax(0,1fr);gap:60px;border-top:1px solid var(--line);padding-block:64px}
+.session-recap .recap-attendance{margin-top:24px}
+.session-recap-body{min-width:0}
+.session-recap-body h2{margin-top:0}
+.session-recap-body>p{font-size:15px;line-height:2;color:var(--body);margin-bottom:20px}
+.session-recap-figure{margin:28px 0}
+.session-recap-figure a{display:block}
+.session-recap-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:3px}
+.session-recap-figure figcaption{font-size:11px;line-height:1.8;color:var(--muted);margin-top:12px}
+@media(max-width:800px){.home-recap,.session-recap{grid-template-columns:160px minmax(0,1fr);gap:30px}}
+@media(max-width:680px){.home-recap,.session-recap{grid-template-columns:1fr;gap:24px;padding-block:34px}.recap-attendance{flex-direction:row;align-items:baseline;gap:16px}.session-recap .recap-attendance{margin-top:18px}.session-recap-body>p{font-size:14px}.session-recap-figure{margin-block:24px}}
+
 /* Reserve enough space for three-digit session numbers in every layout. */
 .seminar-card,.seminar-card.featured,:lang(en) .seminar-card,:lang(en) .seminar-card.featured{--seminar-index-width:80px;column-gap:32px}
 .seminar-number strong{display:block;white-space:nowrap}
